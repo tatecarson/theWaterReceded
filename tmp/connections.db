@@ -1,0 +1,2 @@
+{"connectionId":"127.0.0.1:9002","namespace":"osc","data":{"subscriptions":["/"],"infos":{}},"_id":"2y39mAjcuergM5NV"}
+{"connectionId":"127.0.0.1:9001","namespace":"osc","data":{"subscriptions":["/drawing"],"infos":{"blobsPort":44444}},"_id":"SNpm1PBKoVYVn4gf"}

@@ -1,0 +1,1 @@
+{"nsTree":[{"address":"/","lastMessage":null},{"address":"/broadcast","lastMessage":null},{"address":"/broadcast/open","lastMessage":null},{"address":"/broadcast/open/osc","lastMessage":["127.0.0.1:9001"]},{"address":"/hello","lastMessage":["there"]},{"address":"/drawing","lastMessage":null},{"address":"/sc","lastMessage":["there"]}]}
