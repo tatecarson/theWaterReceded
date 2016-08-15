@@ -12,4 +12,11 @@ b = NetAddr.new("localhost", 9000);
 b.sendMsg("/sys/subscribe", 9002, "/");
 
 // Now sending stuff
-b.sendMsg("/sc", "there");
+(
+Tdef(\test, {
+  inf.do({|i|
+		b.sendMsg("/sc", rrand(100, 500), rrand(100, 500));
+    1.wait;
+  });
+}).play;
+)
