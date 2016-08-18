@@ -4,587 +4,584 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-name	package.json	/^  "name": "rhizome",$/;"	f
-version	package.json	/^  "version": "1.0.0",$/;"	f
-description	package.json	/^  "description": "Instructions --------------",$/;"	f
-main	package.json	/^  "main": "config.js",$/;"	f
-scripts	package.json	/^  "scripts": {$/;"	f
-test	package.json	/^    "test": "echo \\"Error: no test specified\\" && exit 1"$/;"	f
-repository	package.json	/^  "repository": {$/;"	f
-type	package.json	/^    "type": "git",$/;"	f
-url	package.json	/^    "url": "git+https:\/\/github.com\/tatecarson\/rhizomep5js.git"$/;"	f
-author	package.json	/^  "author": "",$/;"	f
-license	package.json	/^  "license": "ISC",$/;"	f
-bugs	package.json	/^  "bugs": {$/;"	f
-url	package.json	/^    "url": "https:\/\/github.com\/tatecarson\/rhizomep5js\/issues"$/;"	f
-homepage	package.json	/^  "homepage": "https:\/\/github.com\/tatecarson\/rhizomep5js#readme"$/;"	f
-setup	pages/js/sketch.js	/^function setup() {$/;"	f
-draw	pages/js/sketch.js	/^function draw() {$/;"	f
-select	pages/libraries/p5.dom.js	/^  p5.prototype.select = function (e) {$/;"	m
-p5	pages/libraries/p5.dom.js	/^  };$/;"	c
-p5.selectAll	pages/libraries/p5.dom.js	/^  p5.prototype.selectAll = function (e) {$/;"	m
-wrapElement	pages/libraries/p5.dom.js	/^  function wrapElement(elt) {$/;"	f
-p5.removeElements	pages/libraries/p5.dom.js	/^  p5.prototype.removeElements = function (e) {$/;"	m
+Add	pages/libraries/p5.sound.js	/^  Mult.prototype.fade = Signal.prototype.fade;$/;"	c
+Add.add	pages/libraries/p5.sound.js	/^  Add.prototype.add = Signal.prototype.add;$/;"	m
+Add.fade	pages/libraries/p5.sound.js	/^  Add.prototype.fade = Signal.prototype.fade;$/;"	m
+Add.mult	pages/libraries/p5.sound.js	/^  Add.prototype.mult = Signal.prototype.mult;$/;"	m
+Add.scale	pages/libraries/p5.sound.js	/^  Add.prototype.scale = Signal.prototype.scale;$/;"	m
+Add.setInput	pages/libraries/p5.sound.js	/^  Add.prototype.setInput = Signal.prototype.setInput;$/;"	m
+AudioBufferSourceNode	pages/libraries/p5.sound.js	/^  if (typeof AudioBufferSourceNode.prototype.start !== 'function') {$/;"	c
+AudioBufferSourceNode.start	pages/libraries/p5.sound.js	/^    AudioBufferSourceNode.prototype.start = AudioBufferSourceNode.prototype.noteGrainOn;$/;"	m
+AudioBufferSourceNode.stop	pages/libraries/p5.sound.js	/^    AudioBufferSourceNode.prototype.stop = AudioBufferSourceNode.prototype.noteOff;$/;"	m
+AudioContext	pages/libraries/p5.sound.js	/^  if (typeof AudioContext.prototype.createGain !== 'function') {$/;"	c
+AudioContext.createDelay	pages/libraries/p5.sound.js	/^    AudioContext.prototype.createDelay = AudioContext.prototype.createDelayNode;$/;"	m
+AudioContext.createGain	pages/libraries/p5.sound.js	/^    AudioContext.prototype.createGain = AudioContext.prototype.createGainNode;$/;"	m
+AudioContext.createPeriodicWave	pages/libraries/p5.sound.js	/^    AudioContext.prototype.createPeriodicWave = AudioContext.prototype.createWaveTable;$/;"	m
+AudioNode	pages/libraries/p5.sound.js	/^  if (!window.Tone) {$/;"	c
+AudioNode._nativeConnect	pages/libraries/p5.sound.js	/^    AudioNode.prototype._nativeConnect = AudioNode.prototype.connect;$/;"	m
+AudioNode.chain	pages/libraries/p5.sound.js	/^  AudioNode.prototype.chain = Tone.prototype.chain;$/;"	m
+AudioNode.connect	pages/libraries/p5.sound.js	/^    AudioNode.prototype.connect = function (B, outNum, inNum) {$/;"	m
+AudioNode.fan	pages/libraries/p5.sound.js	/^  AudioNode.prototype.fan = Tone.prototype.fan;$/;"	m
+AudioNode.noGC	pages/libraries/p5.sound.js	/^  AudioNode.prototype.noGC = function () {$/;"	m
+Mult	pages/libraries/p5.sound.js	/^  Signal.prototype.fade = Signal.prototype.linearRampToValueAtTime;$/;"	c
+Mult.add	pages/libraries/p5.sound.js	/^  Mult.prototype.add = Signal.prototype.add;$/;"	m
+Mult.fade	pages/libraries/p5.sound.js	/^  Mult.prototype.fade = Signal.prototype.fade;$/;"	m
+Mult.mult	pages/libraries/p5.sound.js	/^  Mult.prototype.mult = Signal.prototype.mult;$/;"	m
+Mult.scale	pages/libraries/p5.sound.js	/^  Mult.prototype.scale = Signal.prototype.scale;$/;"	m
+Mult.setInput	pages/libraries/p5.sound.js	/^  Mult.prototype.setInput = Signal.prototype.setInput;$/;"	m
+OscillatorNode	pages/libraries/p5.sound.js	/^  if (typeof OscillatorNode.prototype.start !== 'function') {$/;"	c
+OscillatorNode.setPeriodicWave	pages/libraries/p5.sound.js	/^    OscillatorNode.prototype.setPeriodicWave = OscillatorNode.prototype.setWaveTable;$/;"	m
+OscillatorNode.start	pages/libraries/p5.sound.js	/^    OscillatorNode.prototype.start = OscillatorNode.prototype.noteOn;$/;"	m
+OscillatorNode.stop	pages/libraries/p5.sound.js	/^    OscillatorNode.prototype.stop = OscillatorNode.prototype.noteOff;$/;"	m
+Scale	pages/libraries/p5.sound.js	/^  Add.prototype.fade = Signal.prototype.fade;$/;"	c
+Scale.add	pages/libraries/p5.sound.js	/^  Scale.prototype.add = Signal.prototype.add;$/;"	m
+Scale.fade	pages/libraries/p5.sound.js	/^  Scale.prototype.fade = Signal.prototype.fade;$/;"	m
+Scale.mult	pages/libraries/p5.sound.js	/^  Scale.prototype.mult = Signal.prototype.mult;$/;"	m
+Scale.scale	pages/libraries/p5.sound.js	/^  Scale.prototype.scale = Signal.prototype.scale;$/;"	m
+Scale.setInput	pages/libraries/p5.sound.js	/^  Scale.prototype.setInput = Signal.prototype.setInput;$/;"	m
+Signal	pages/libraries/p5.sound.js	/^  };$/;"	c
+Signal.add	pages/libraries/p5.sound.js	/^  Signal.prototype.add = function (num) {$/;"	m
+Signal.fade	pages/libraries/p5.sound.js	/^  Signal.prototype.fade = Signal.prototype.linearRampToValueAtTime;$/;"	m
+Signal.mult	pages/libraries/p5.sound.js	/^  Signal.prototype.mult = function (num) {$/;"	m
+Signal.scale	pages/libraries/p5.sound.js	/^  Signal.prototype.scale = function (inMin, inMax, outMin, outMax) {$/;"	m
+Signal.setInput	pages/libraries/p5.sound.js	/^  Signal.prototype.setInput = function (_input) {$/;"	m
+TempConstructor	pages/libraries/p5.sound.js	/^    }$/;"	c
+Tone	pages/libraries/p5.sound.js	/^  Tone.context = audioContext;$/;"	c
+Tone.Add	pages/libraries/p5.sound.js	/^  'use strict';$/;"	c
+Tone.Add.Tone	pages/libraries/p5.sound.js	/^  Tone.Add.prototype.dispose = function () {$/;"	c
+Tone.Add.dispose	pages/libraries/p5.sound.js	/^  Tone.Add.prototype.dispose = function () {$/;"	m
+Tone.Add.setValue	pages/libraries/p5.sound.js	/^  Tone.Add.prototype.setValue = function (value) {$/;"	m
+Tone.Clock	pages/libraries/p5.sound.js	/^  'use strict';$/;"	c
+Tone.Clock._processBuffer	pages/libraries/p5.sound.js	/^  Tone.Clock.prototype._processBuffer = function (event) {$/;"	m
+Tone.Clock.dispose	pages/libraries/p5.sound.js	/^  Tone.Clock.prototype.dispose = function () {$/;"	m
+Tone.Clock.getRate	pages/libraries/p5.sound.js	/^  Tone.Clock.prototype.getRate = function () {$/;"	m
+Tone.Clock.setRate	pages/libraries/p5.sound.js	/^  Tone.Clock.prototype.setRate = function (rate, rampTime) {$/;"	m
+Tone.Clock.start	pages/libraries/p5.sound.js	/^  Tone.Clock.prototype.start = function (time) {$/;"	m
+Tone.Clock.stop	pages/libraries/p5.sound.js	/^  Tone.Clock.prototype.stop = function (time, onend) {$/;"	m
+Tone.Clock.this._jsNode	pages/libraries/p5.sound.js	/^    this._jsNode.onaudioprocess = function () {$/;"	m
+Tone.Clock.this._oscillator	pages/libraries/p5.sound.js	/^    this._oscillator.onended = function () {$/;"	m
+Tone.Multiply	pages/libraries/p5.sound.js	/^  'use strict';$/;"	c
+Tone.Multiply.Tone	pages/libraries/p5.sound.js	/^  Tone.Multiply.prototype.dispose = function () {$/;"	c
+Tone.Multiply.dispose	pages/libraries/p5.sound.js	/^  Tone.Multiply.prototype.dispose = function () {$/;"	m
+Tone.Multiply.setValue	pages/libraries/p5.sound.js	/^  Tone.Multiply.prototype.setValue = function (value) {$/;"	m
+Tone.Scale	pages/libraries/p5.sound.js	/^  'use strict';$/;"	c
+Tone.Scale.Tone	pages/libraries/p5.sound.js	/^  Tone.Scale.prototype.dispose = function () {$/;"	c
+Tone.Scale._setRange	pages/libraries/p5.sound.js	/^  Tone.Scale.prototype._setRange = function () {$/;"	m
+Tone.Scale.dispose	pages/libraries/p5.sound.js	/^  Tone.Scale.prototype.dispose = function () {$/;"	m
+Tone.Scale.setMax	pages/libraries/p5.sound.js	/^  Tone.Scale.prototype.setMax = function (max) {$/;"	m
+Tone.Scale.setMin	pages/libraries/p5.sound.js	/^  Tone.Scale.prototype.setMin = function (min) {$/;"	m
+Tone.Signal	pages/libraries/p5.sound.js	/^  'use strict';$/;"	c
+Tone.Signal.Tone	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.dispose = function () {$/;"	c
+Tone.Signal.cancelScheduledValues	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.cancelScheduledValues = function (startTime) {$/;"	m
+Tone.Signal.dispose	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.dispose = function () {$/;"	m
+Tone.Signal.exponentialRampToValueAtTime	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.exponentialRampToValueAtTime = function (value, endTime) {$/;"	m
+Tone.Signal.exponentialRampToValueNow	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.exponentialRampToValueNow = function (value, endTime) {$/;"	m
+Tone.Signal.getValue	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.getValue = function () {$/;"	m
+Tone.Signal.linearRampToValueAtTime	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.linearRampToValueAtTime = function (value, endTime) {$/;"	m
+Tone.Signal.linearRampToValueNow	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.linearRampToValueNow = function (value, endTime) {$/;"	m
+Tone.Signal.setCurrentValueNow	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.setCurrentValueNow = function (now) {$/;"	m
+Tone.Signal.setTargetAtTime	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.setTargetAtTime = function (value, startTime, timeConstant) {$/;"	m
+Tone.Signal.setValue	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.setValue = function (value) {$/;"	m
+Tone.Signal.setValueAtTime	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.setValueAtTime = function (value, time) {$/;"	m
+Tone.Signal.setValueCurveAtTime	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.setValueCurveAtTime = function (values, startTime, duration) {$/;"	m
+Tone.Signal.sync	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.sync = function (signal, ratio) {$/;"	m
+Tone.Signal.unsync	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.unsync = function () {$/;"	m
+Tone.SignalBase	pages/libraries/p5.sound.js	/^  'use strict';$/;"	f
+Tone.SignalBase	pages/libraries/p5.sound.js	/^  Tone.extend(Tone.SignalBase);$/;"	c
+Tone.SignalBase.Tone	pages/libraries/p5.sound.js	/^  Tone.SignalBase.prototype.dispose = function () {$/;"	c
+Tone.SignalBase.connect	pages/libraries/p5.sound.js	/^  Tone.SignalBase.prototype.connect = function (node, outputNumber, inputNumber) {$/;"	m
+Tone.SignalBase.dispose	pages/libraries/p5.sound.js	/^  Tone.SignalBase.prototype.dispose = function () {$/;"	m
+Tone.WaveShaper	pages/libraries/p5.sound.js	/^  'use strict';$/;"	c
+Tone.WaveShaper.Tone	pages/libraries/p5.sound.js	/^  Tone.WaveShaper.prototype.dispose = function () {$/;"	c
+Tone.WaveShaper._isSafari	pages/libraries/p5.sound.js	/^  Tone.WaveShaper.prototype._isSafari = function () {$/;"	m
+Tone.WaveShaper.dispose	pages/libraries/p5.sound.js	/^  Tone.WaveShaper.prototype.dispose = function () {$/;"	m
+Tone.WaveShaper.setCurve	pages/libraries/p5.sound.js	/^  Tone.WaveShaper.prototype.setCurve = function (mapping) {$/;"	m
+Tone.WaveShaper.setMap	pages/libraries/p5.sound.js	/^  Tone.WaveShaper.prototype.setMap = function (mapping) {$/;"	m
+Tone.WaveShaper.setOversample	pages/libraries/p5.sound.js	/^  Tone.WaveShaper.prototype.setOversample = function (oversampling) {$/;"	m
+Tone._initAudioContext	pages/libraries/p5.sound.js	/^  var newContextCallbacks = [];$/;"	f
+Tone.bufferSize	pages/libraries/p5.sound.js	/^  Tone.prototype.bufferSize = 2048;$/;"	m
+Tone.bufferTime	pages/libraries/p5.sound.js	/^  Tone.prototype.bufferTime = Tone.prototype.bufferSize \/ Tone.context.sampleRate;$/;"	m
+Tone.chain	pages/libraries/p5.sound.js	/^  Tone.prototype.chain = function () {$/;"	m
+Tone.connect	pages/libraries/p5.sound.js	/^  Tone.prototype.connect = function (unit, outputNum, inputNum) {$/;"	m
+Tone.connectParallel	pages/libraries/p5.sound.js	/^  Tone.prototype.connectParallel = function () {$/;"	m
+Tone.connectSeries	pages/libraries/p5.sound.js	/^  Tone.prototype.connectSeries = function () {$/;"	m
+Tone.context	pages/libraries/p5.sound.js	/^    Tone.prototype.context = ctx;$/;"	m
+Tone.context	pages/libraries/p5.sound.js	/^  Tone.prototype.context = Tone.context;$/;"	m
+Tone.dbToGain	pages/libraries/p5.sound.js	/^  Tone.prototype.dbToGain = function (db) {$/;"	m
+Tone.defaultArg	pages/libraries/p5.sound.js	/^  Tone.prototype.defaultArg = function (given, fallback) {$/;"	m
+Tone.disconnect	pages/libraries/p5.sound.js	/^  Tone.prototype.disconnect = function (outputNum) {$/;"	m
+Tone.dispose	pages/libraries/p5.sound.js	/^  Tone.prototype.dispose = function () {$/;"	m
+Tone.equalPowerScale	pages/libraries/p5.sound.js	/^  Tone.prototype.equalPowerScale = function (percent) {$/;"	m
+Tone.expScale	pages/libraries/p5.sound.js	/^  Tone.prototype.expScale = function (gain) {$/;"	m
+Tone.extend	pages/libraries/p5.sound.js	/^  };$/;"	f
+Tone.extend.TempConstructor	pages/libraries/p5.sound.js	/^    function TempConstructor() {$/;"	f
+Tone.fan	pages/libraries/p5.sound.js	/^  Tone.prototype.fan = function () {$/;"	m
+Tone.frequencyToSeconds	pages/libraries/p5.sound.js	/^  Tone.prototype.frequencyToSeconds = function (freq) {$/;"	m
+Tone.gainToDb	pages/libraries/p5.sound.js	/^  Tone.prototype.gainToDb = function (gain) {$/;"	m
+Tone.interpolate	pages/libraries/p5.sound.js	/^  Tone.prototype.interpolate = function (input, outputMin, outputMax) {$/;"	m
+Tone.isUndef	pages/libraries/p5.sound.js	/^  Tone.prototype.isUndef = isUndef;$/;"	m
+Tone.logScale	pages/libraries/p5.sound.js	/^  Tone.prototype.logScale = function (gain) {$/;"	m
+Tone.noGC	pages/libraries/p5.sound.js	/^  Tone.prototype.noGC = function () {$/;"	m
+Tone.normalize	pages/libraries/p5.sound.js	/^  Tone.prototype.normalize = function (input, inputMin, inputMax) {$/;"	m
+Tone.now	pages/libraries/p5.sound.js	/^  Tone.prototype.now = function () {$/;"	m
+Tone.optionsObject	pages/libraries/p5.sound.js	/^  Tone.prototype.optionsObject = function (values, keys, defaults) {$/;"	m
+Tone.samplesToSeconds	pages/libraries/p5.sound.js	/^  Tone.prototype.samplesToSeconds = function (samples) {$/;"	m
+Tone.secondsToFrequency	pages/libraries/p5.sound.js	/^  Tone.prototype.secondsToFrequency = function (seconds) {$/;"	m
+Tone.setContext	pages/libraries/p5.sound.js	/^  };$/;"	f
+Tone.startMobile	pages/libraries/p5.sound.js	/^  };$/;"	f
+Tone.toSamples	pages/libraries/p5.sound.js	/^  Tone.prototype.toSamples = function (time) {$/;"	m
+Tone.toSeconds	pages/libraries/p5.sound.js	/^  Tone.prototype.toSeconds = function (time, now) {$/;"	m
+Tone_core_Clock	pages/libraries/p5.sound.js	/^var Tone_core_Clock;$/;"	f
+Tone_core_Clock	pages/libraries/p5.sound.js	/^var Tone_core_Clock;$/;"	v
+Tone_core_Tone	pages/libraries/p5.sound.js	/^var Tone_core_Tone;$/;"	f
+Tone_core_Tone	pages/libraries/p5.sound.js	/^var Tone_core_Tone;$/;"	v
+Tone_core_Tone.Tone	pages/libraries/p5.sound.js	/^  var Tone = function (inputs, outputs) {$/;"	f
+Tone_core_Tone.isUndef	pages/libraries/p5.sound.js	/^  function isUndef(val) {$/;"	f
+Tone_signal_Add	pages/libraries/p5.sound.js	/^var Tone_signal_Add;$/;"	f
+Tone_signal_Add	pages/libraries/p5.sound.js	/^var Tone_signal_Add;$/;"	v
+Tone_signal_Multiply	pages/libraries/p5.sound.js	/^var Tone_signal_Multiply;$/;"	f
+Tone_signal_Multiply	pages/libraries/p5.sound.js	/^var Tone_signal_Multiply;$/;"	v
+Tone_signal_Scale	pages/libraries/p5.sound.js	/^var Tone_signal_Scale;$/;"	f
+Tone_signal_Scale	pages/libraries/p5.sound.js	/^var Tone_signal_Scale;$/;"	v
+Tone_signal_Signal	pages/libraries/p5.sound.js	/^var Tone_signal_Signal;$/;"	f
+Tone_signal_Signal	pages/libraries/p5.sound.js	/^var Tone_signal_Signal;$/;"	v
+Tone_signal_SignalBase	pages/libraries/p5.sound.js	/^var Tone_signal_SignalBase;$/;"	f
+Tone_signal_SignalBase	pages/libraries/p5.sound.js	/^var Tone_signal_SignalBase;$/;"	v
+Tone_signal_WaveShaper	pages/libraries/p5.sound.js	/^var Tone_signal_WaveShaper;$/;"	f
+Tone_signal_WaveShaper	pages/libraries/p5.sound.js	/^var Tone_signal_WaveShaper;$/;"	v
 addElement	pages/libraries/p5.dom.js	/^  function addElement(elt, pInst, media) {$/;"	f
-p5.createImg	pages/libraries/p5.dom.js	/^  p5.prototype.createImg = function() {$/;"	m
-p5.var.setAttrs	pages/libraries/p5.dom.js	/^    var setAttrs = function(){$/;"	f
-elt.onload	pages/libraries/p5.dom.js	/^    }else{$/;"	f
-p5.createA	pages/libraries/p5.dom.js	/^  p5.prototype.createA = function(href, html, target) {$/;"	m
-p5.createSlider	pages/libraries/p5.dom.js	/^  p5.prototype.createSlider = function(min, max, value, step) {$/;"	m
-p5.createButton	pages/libraries/p5.dom.js	/^  p5.prototype.createButton = function(label, value) {$/;"	m
-p5.createCheckbox	pages/libraries/p5.dom.js	/^  p5.prototype.createCheckbox = function() {$/;"	m
-self.checked	pages/libraries/p5.dom.js	/^    var self = addElement(elt, this);$/;"	f
-this.value	pages/libraries/p5.dom.js	/^    this.value = function(val){$/;"	m
-p5.createSelect	pages/libraries/p5.dom.js	/^  p5.prototype.createSelect = function(mult) {$/;"	m
-self.option	pages/libraries/p5.dom.js	/^    var self = addElement(elt, this);$/;"	f
-self.selected	pages/libraries/p5.dom.js	/^    };$/;"	f
-p5.createInput	pages/libraries/p5.dom.js	/^  p5.prototype.createInput = function(value) {$/;"	m
-p5.createFileInput	pages/libraries/p5.dom.js	/^  p5.prototype.createFileInput = function(callback, multiple) {$/;"	m
-function.makeLoader	pages/libraries/p5.dom.js	/^          function makeLoader(theFile) {$/;"	f
-function.handleFileSelect	pages/libraries/p5.dom.js	/^      function handleFileSelect(evt) {$/;"	f
-createMedia	pages/libraries/p5.dom.js	/^  function createMedia(pInst, type, src, callback) {$/;"	f
-p5.createVideo	pages/libraries/p5.dom.js	/^  p5.prototype.createVideo = function(src, callback) {$/;"	m
-p5.createAudio	pages/libraries/p5.dom.js	/^  p5.prototype.createAudio = function(src, callback) {$/;"	m
-p5.VIDEO	pages/libraries/p5.dom.js	/^  p5.prototype.VIDEO = 'video';$/;"	m
-p5.AUDIO	pages/libraries/p5.dom.js	/^  p5.prototype.AUDIO = 'audio';$/;"	m
-p5.createCapture	pages/libraries/p5.dom.js	/^  p5.prototype.createCapture = function() {$/;"	m
-constraints.video	pages/libraries/p5.dom.js	/^        constraints = {video: useVideo, audio: useAudio};$/;"	p
-constraints.audio	pages/libraries/p5.dom.js	/^        constraints = {video: useVideo, audio: useAudio};$/;"	p
-p5.createElement	pages/libraries/p5.dom.js	/^  p5.prototype.createElement = function(tag, content) {$/;"	m
-p5.Element	pages/libraries/p5.dom.js	/^  };$/;"	c
-p5.Element.addClass	pages/libraries/p5.dom.js	/^  p5.Element.prototype.addClass = function(c) {$/;"	m
-p5.Element.removeClass	pages/libraries/p5.dom.js	/^  p5.Element.prototype.removeClass = function(c) {$/;"	m
-p5.Element.child	pages/libraries/p5.dom.js	/^  p5.Element.prototype.child = function(c) {$/;"	m
-p5.Element.html	pages/libraries/p5.dom.js	/^  p5.Element.prototype.html = function(html) {$/;"	m
-p5.Element.position	pages/libraries/p5.dom.js	/^  p5.Element.prototype.position = function() {$/;"	m
-p5.Element.translate	pages/libraries/p5.dom.js	/^  p5.Element.prototype.translate = function(){$/;"	m
-p5.Element.rotate	pages/libraries/p5.dom.js	/^  p5.Element.prototype.rotate = function(){$/;"	m
-p5.Element.style	pages/libraries/p5.dom.js	/^  p5.Element.prototype.style = function(prop, val) {$/;"	m
-p5.Element.attribute	pages/libraries/p5.dom.js	/^  p5.Element.prototype.attribute = function(attr, value) {$/;"	m
-p5.Element.value	pages/libraries/p5.dom.js	/^  p5.Element.prototype.value = function() {$/;"	m
-p5.Element.show	pages/libraries/p5.dom.js	/^  p5.Element.prototype.show = function() {$/;"	m
-p5.Element.hide	pages/libraries/p5.dom.js	/^  p5.Element.prototype.hide = function() {$/;"	m
-p5.Element.size	pages/libraries/p5.dom.js	/^  p5.Element.prototype.size = function(w, h) {$/;"	m
-p5.Element.remove	pages/libraries/p5.dom.js	/^  p5.Element.prototype.remove = function() {$/;"	m
-p5.MediaElement	pages/libraries/p5.dom.js	/^  };$/;"	c
-p5.MediaElement.play	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.play = function() {$/;"	m
-p5.MediaElement.stop	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.stop = function() {$/;"	m
-p5.MediaElement.pause	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.pause = function() {$/;"	m
-p5.MediaElement.loop	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.loop = function() {$/;"	m
-p5.MediaElement.noLoop	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.noLoop = function() {$/;"	m
-p5.MediaElement.autoplay	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.autoplay = function(val) {$/;"	m
-p5.MediaElement.volume	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.volume = function(val) {$/;"	m
-p5.MediaElement.time	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.time = function(val) {$/;"	m
-p5.MediaElement.duration	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.duration = function() {$/;"	m
-p5.MediaElement.pixels	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.pixels = [];$/;"	m
-p5.MediaElement.loadPixels	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.loadPixels = function() {$/;"	m
-p5.MediaElement.p5	pages/libraries/p5.dom.js	/^      this.drawingContext.drawImage(this.elt, 0, 0, this.width, this.height);$/;"	c
-p5.MediaElement.updatePixels	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.updatePixels =  function(x, y, w, h){$/;"	m
-p5.MediaElement.p5.Renderer2D	pages/libraries/p5.dom.js	/^    if (this.loadedmetadata) { \/\/ wait for metadata$/;"	c
-p5.MediaElement.get	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.get = function(x, y, w, h){$/;"	m
-p5.MediaElement.return.Renderer2D	pages/libraries/p5.dom.js	/^    if (this.loadedmetadata) { \/\/ wait for metadata$/;"	c
-p5.MediaElement.set	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.set = function(x, y, imgOrCol){$/;"	m
-p5.MediaElement.connect	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.connect = function(obj) {$/;"	m
-p5.MediaElement.showControls	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.showControls = function() {$/;"	m
-p5.MediaElement.hideControls	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.hideControls = function() {$/;"	m
-p5.MediaElement.addCue	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.addCue = function(time, callback, val) {$/;"	m
-p5.MediaElement.removeCue	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.removeCue = function(id) {$/;"	m
-p5.MediaElement._onTimeUpdate	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype._onTimeUpdate = function() {$/;"	m
-var.Cue	pages/libraries/p5.dom.js	/^  var Cue = function(callback, time, id, val) {$/;"	c
-p5.File	pages/libraries/p5.dom.js	/^  };$/;"	c
-p5	pages/libraries/p5.sound.js	/^  var audiocontext = new window.AudioContext();$/;"	c
-p5.getAudioContext	pages/libraries/p5.sound.js	/^  p5.prototype.getAudioContext = function () {$/;"	m
-window.AudioBufferSourceNode	pages/libraries/p5.sound.js	/^  if (typeof window.AudioBufferSourceNode.prototype.start !== 'function') {$/;"	c
-window.AudioBufferSourceNode.start	pages/libraries/p5.sound.js	/^    window.AudioBufferSourceNode.prototype.start = window.AudioBufferSourceNode.prototype.noteGrainOn;$/;"	m
-window.AudioBufferSourceNode.stop	pages/libraries/p5.sound.js	/^    window.AudioBufferSourceNode.prototype.stop = window.AudioBufferSourceNode.prototype.noteOff;$/;"	m
-window.OscillatorNode	pages/libraries/p5.sound.js	/^  if (typeof window.OscillatorNode.prototype.start !== 'function') {$/;"	c
-window.OscillatorNode.start	pages/libraries/p5.sound.js	/^    window.OscillatorNode.prototype.start = window.OscillatorNode.prototype.noteOn;$/;"	m
-window.OscillatorNode.stop	pages/libraries/p5.sound.js	/^    window.OscillatorNode.prototype.stop = window.OscillatorNode.prototype.noteOff;$/;"	m
-window.AudioContext	pages/libraries/p5.sound.js	/^  if (!window.AudioContext.prototype.hasOwnProperty('createScriptProcessor')) {$/;"	c
-window.AudioContext.createScriptProcessor	pages/libraries/p5.sound.js	/^    window.AudioContext.prototype.createScriptProcessor = window.AudioContext.prototype.createJavaScriptNode;$/;"	m
-p5.isSupported	pages/libraries/p5.sound.js	/^  p5.prototype.isSupported = function () {$/;"	m
-sndcore.isOGGSupported	pages/libraries/p5.sound.js	/^  var isOGGSupported = function () {$/;"	f
-sndcore.isMP3Supported	pages/libraries/p5.sound.js	/^  var isMP3Supported = function () {$/;"	f
-sndcore.isWAVSupported	pages/libraries/p5.sound.js	/^  var isWAVSupported = function () {$/;"	f
-sndcore.isAACSupported	pages/libraries/p5.sound.js	/^  var isAACSupported = function () {$/;"	f
-sndcore.isAIFSupported	pages/libraries/p5.sound.js	/^  var isAIFSupported = function () {$/;"	f
-p5.isFileSupported	pages/libraries/p5.sound.js	/^  p5.prototype.isFileSupported = function (extension) {$/;"	m
-sndcore	pages/libraries/p5.sound.js	/^var sndcore;$/;"	f
-master	pages/libraries/p5.sound.js	/^var master;$/;"	v
-master.Master	pages/libraries/p5.sound.js	/^  var Master = function () {$/;"	c
-p5.getMasterVolume	pages/libraries/p5.sound.js	/^  p5.prototype.getMasterVolume = function () {$/;"	m
-p5.masterVolume	pages/libraries/p5.sound.js	/^  p5.prototype.masterVolume = function (vol, rampTime, tFromNow) {$/;"	m
-master	pages/libraries/p5.sound.js	/^var master;$/;"	f
-helpers	pages/libraries/p5.sound.js	/^var helpers;$/;"	v
-p5.sampleRate	pages/libraries/p5.sound.js	/^  p5.prototype.sampleRate = function () {$/;"	m
-p5.freqToMidi	pages/libraries/p5.sound.js	/^  p5.prototype.freqToMidi = function (f) {$/;"	m
-p5.midiToFreq	pages/libraries/p5.sound.js	/^  p5.prototype.midiToFreq = function (m) {$/;"	m
-p5.soundFormats	pages/libraries/p5.sound.js	/^  p5.prototype.soundFormats = function () {$/;"	m
-p5.disposeSound	pages/libraries/p5.sound.js	/^  p5.prototype.disposeSound = function () {$/;"	m
-p5.registerMethod	pages/libraries/p5.sound.js	/^  p5.prototype.registerMethod('remove', p5.prototype.disposeSound);$/;"	m
-p5._checkFileFormats	pages/libraries/p5.sound.js	/^  p5.prototype._checkFileFormats = function (paths) {$/;"	m
-p5._mathChain	pages/libraries/p5.sound.js	/^  p5.prototype._mathChain = function (o, math, thisChain, nextChain, type) {$/;"	m
-helpers	pages/libraries/p5.sound.js	/^var helpers;$/;"	f
-panner	pages/libraries/p5.sound.js	/^var panner;$/;"	v
-p5.Panner	pages/libraries/p5.sound.js	/^  if (typeof ac.createStereoPanner !== 'undefined') {$/;"	c
-p5.Panner.pan	pages/libraries/p5.sound.js	/^    p5.Panner.prototype.pan = function (val, tFromNow) {$/;"	m
-p5.Panner.inputChannels	pages/libraries/p5.sound.js	/^    p5.Panner.prototype.inputChannels = function (numChannels) {$/;"	m
-p5.Panner.connect	pages/libraries/p5.sound.js	/^    p5.Panner.prototype.connect = function (obj) {$/;"	m
-p5.Panner.disconnect	pages/libraries/p5.sound.js	/^    p5.Panner.prototype.disconnect = function (obj) {$/;"	m
-p5.Panner.pan	pages/libraries/p5.sound.js	/^    p5.Panner.prototype.pan = function (val, tFromNow) {$/;"	m
-p5.Panner.inputChannels	pages/libraries/p5.sound.js	/^    p5.Panner.prototype.inputChannels = function (numChannels) {$/;"	m
-p5.Panner.connect	pages/libraries/p5.sound.js	/^    p5.Panner.prototype.connect = function (obj) {$/;"	m
-p5.Panner.disconnect	pages/libraries/p5.sound.js	/^    p5.Panner.prototype.disconnect = function (obj) {$/;"	m
-panner3D.pan	pages/libraries/p5.sound.js	/^    panner3D.connect(output);$/;"	f
-p5.Panner3D	pages/libraries/p5.sound.js	/^  }$/;"	f
-panner	pages/libraries/p5.sound.js	/^var panner;$/;"	f
-soundfile	pages/libraries/p5.sound.js	/^var soundfile;$/;"	v
-p5sound.this.whileLoading	pages/libraries/p5.sound.js	/^      this.whileLoading = function () {$/;"	m
-p5.SoundFile	pages/libraries/p5.sound.js	/^  var ac = p5sound.audiocontext;$/;"	c
-p5.registerPreloadMethod	pages/libraries/p5.sound.js	/^  p5.prototype.registerPreloadMethod('loadSound', p5);$/;"	m
-p5.loadSound	pages/libraries/p5.sound.js	/^  p5.prototype.loadSound = function (path, callback, whileLoading) {$/;"	m
-p5.SoundFile.load	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.load = function (callback) {$/;"	m
-request.onload	pages/libraries/p5.sound.js	/^      var self = this;$/;"	f
-reader.onload	pages/libraries/p5.sound.js	/^      var self = this;$/;"	f
-p5.SoundFile._updateProgress	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype._updateProgress = function (evt) {$/;"	m
-p5.SoundFile.isLoaded	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.isLoaded = function () {$/;"	m
-p5.SoundFile.play	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.play = function (time, rate, amp, _cueStart, duration) {$/;"	m
-this.bufferSourceNode	pages/libraries/p5.sound.js	/^      this.bufferSourceNode.onended = function (e) {$/;"	m
-p5.SoundFile.playMode	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.playMode = function (str) {$/;"	m
-p5.SoundFile.pause	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.pause = function (time) {$/;"	m
-p5.SoundFile.loop	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.loop = function (startTime, rate, amp, loopStart, duration) {$/;"	m
-p5.SoundFile.setLoop	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.setLoop = function (bool) {$/;"	m
-p5.SoundFile.isLooping	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.isLooping = function () {$/;"	m
-p5.SoundFile.isPlaying	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.isPlaying = function () {$/;"	m
-p5.SoundFile.isPaused	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.isPaused = function () {$/;"	m
-p5.SoundFile.stop	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.stop = function (timeFromNow) {$/;"	m
-p5.SoundFile.stopAll	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.stopAll = function (_time) {$/;"	m
-p5.SoundFile.setVolume	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.setVolume = function (vol, rampTime, tFromNow) {$/;"	m
-p5.SoundFile.amp	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.amp = p5.SoundFile.prototype.setVolume;$/;"	m
-p5.SoundFile.fade	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.fade = p5.SoundFile.prototype.setVolume;$/;"	m
-p5.SoundFile.getVolume	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.getVolume = function () {$/;"	m
-p5.SoundFile.pan	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.pan = function (pval, tFromNow) {$/;"	m
-p5.SoundFile.getPan	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.getPan = function () {$/;"	m
-p5.SoundFile.rate	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.rate = function (playbackRate) {$/;"	m
-p5.SoundFile.setPitch	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.setPitch = function (num) {$/;"	m
-p5.SoundFile.getPlaybackRate	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.getPlaybackRate = function () {$/;"	m
-p5.SoundFile.duration	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.duration = function () {$/;"	m
-p5.SoundFile.currentTime	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.currentTime = function () {$/;"	m
-p5.SoundFile.jump	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.jump = function (cueTime, duration) {$/;"	m
-p5.SoundFile.channels	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.channels = function () {$/;"	m
-p5.SoundFile.sampleRate	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.sampleRate = function () {$/;"	m
-p5.SoundFile.frames	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.frames = function () {$/;"	m
-p5.SoundFile.getPeaks	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.getPeaks = function (length) {$/;"	m
-p5.SoundFile.reverseBuffer	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.reverseBuffer = function () {$/;"	m
-p5.SoundFile.Array	pages/libraries/p5.sound.js	/^      for (var i = 0; i < this.buffer.numberOfChannels; i++) {$/;"	c
-p5.SoundFile._onEnded	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype._onEnded = function (s) {$/;"	m
-p5.SoundFile.s.onended	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype._onEnded = function (s) {$/;"	f
-p5.SoundFile.add	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.add = function () {$/;"	m
-p5.SoundFile.dispose	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.dispose = function () {$/;"	m
-p5.SoundFile.connect	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.connect = function (unit) {$/;"	m
-p5.SoundFile.disconnect	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.disconnect = function (unit) {$/;"	m
-p5.SoundFile.getLevel	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.getLevel = function (smoothing) {$/;"	m
-p5.SoundFile.setPath	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.setPath = function (p, callback) {$/;"	m
-p5.SoundFile.setBuffer	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.setBuffer = function (buf) {$/;"	m
-p5.SoundFile._initCounterNode	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype._initCounterNode = function () {$/;"	m
-self._scopeNode.onaudioprocess	pages/libraries/p5.sound.js	/^    self._scopeNode.connect(p5.soundOut._silentNode);$/;"	f
-p5.SoundFile._initSourceNode	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype._initSourceNode = function () {$/;"	m
-soundfile._createCounterBuffer	pages/libraries/p5.sound.js	/^  var _createCounterBuffer = function (buffer) {$/;"	f
-p5.SoundFile.processPeaks	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.processPeaks = function (callback, _initThreshold, _minThreshold, _minPeaks) {$/;"	m
-offlineContext.oncomplete	pages/libraries/p5.sound.js	/^    offlineContext.startRendering();$/;"	c
-soundfile.Peak	pages/libraries/p5.sound.js	/^  var Peak = function (amp, i) {$/;"	c
-soundfile.getPeaksAtThreshold	pages/libraries/p5.sound.js	/^  function getPeaksAtThreshold(data, threshold) {$/;"	f
-soundfile.countIntervalsBetweenNearbyPeaks	pages/libraries/p5.sound.js	/^  function countIntervalsBetweenNearbyPeaks(peaksObj) {$/;"	f
-soundfile.groupNeighborsByTempo	pages/libraries/p5.sound.js	/^  function groupNeighborsByTempo(intervalCounts, sampleRate) {$/;"	f
-soundfile.getPeaksAtTopTempo	pages/libraries/p5.sound.js	/^  function getPeaksAtTopTempo(peaksObj, tempo, sampleRate, bpmVariance) {$/;"	f
-soundfile.mapTempo	pages/libraries/p5.sound.js	/^  function mapTempo(theoreticalTempo) {$/;"	f
-p5.SoundFile.addCue	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.addCue = function (time, callback, val) {$/;"	m
-p5.SoundFile.removeCue	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.removeCue = function (id) {$/;"	m
-p5.SoundFile.clearCues	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.clearCues = function () {$/;"	m
-p5.SoundFile._onTimeUpdate	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype._onTimeUpdate = function (position) {$/;"	m
-soundfile.Cue	pages/libraries/p5.sound.js	/^  var Cue = function (callback, time, id, val) {$/;"	c
-soundfile	pages/libraries/p5.sound.js	/^var soundfile;$/;"	f
-amplitude	pages/libraries/p5.sound.js	/^var amplitude;$/;"	v
-p5.Amplitude	pages/libraries/p5.sound.js	/^  var p5sound = master;$/;"	c
-p5.Amplitude.setInput	pages/libraries/p5.sound.js	/^  p5.Amplitude.prototype.setInput = function (source, smoothing) {$/;"	m
-p5.Amplitude.connect	pages/libraries/p5.sound.js	/^  p5.Amplitude.prototype.connect = function (unit) {$/;"	m
-p5.Amplitude.disconnect	pages/libraries/p5.sound.js	/^  p5.Amplitude.prototype.disconnect = function (unit) {$/;"	m
-p5.Amplitude._audioProcess	pages/libraries/p5.sound.js	/^  p5.Amplitude.prototype._audioProcess = function (event) {$/;"	m
-p5.Amplitude.getLevel	pages/libraries/p5.sound.js	/^  p5.Amplitude.prototype.getLevel = function (channel) {$/;"	m
-p5.Amplitude.toggleNormalize	pages/libraries/p5.sound.js	/^  p5.Amplitude.prototype.toggleNormalize = function (bool) {$/;"	m
-p5.Amplitude.smooth	pages/libraries/p5.sound.js	/^  p5.Amplitude.prototype.smooth = function (s) {$/;"	m
 amplitude	pages/libraries/p5.sound.js	/^var amplitude;$/;"	f
+amplitude	pages/libraries/p5.sound.js	/^var amplitude;$/;"	v
+audioin	pages/libraries/p5.sound.js	/^var audioin;$/;"	f
+audioin	pages/libraries/p5.sound.js	/^var audioin;$/;"	v
+author	package.json	/^  "author": "",$/;"	f
+bugs	package.json	/^  "bugs": {$/;"	f
+child	pages/libraries/p5.sound.js	/^    child.prototype = new TempConstructor();$/;"	c
+child.constructor	pages/libraries/p5.sound.js	/^    child.prototype.constructor = child;$/;"	m
+constraints.audio	pages/libraries/p5.dom.js	/^        constraints = {video: useVideo, audio: useAudio};$/;"	p
+constraints.video	pages/libraries/p5.dom.js	/^        constraints = {video: useVideo, audio: useAudio};$/;"	p
+createMedia	pages/libraries/p5.dom.js	/^  function createMedia(pInst, type, src, callback) {$/;"	f
+delay	pages/libraries/p5.sound.js	/^var delay;$/;"	f
+delay	pages/libraries/p5.sound.js	/^var delay;$/;"	v
+description	package.json	/^  "description": "Instructions --------------",$/;"	f
+draw	pages/js/sketch.js	/^function draw() {$/;"	f
+draw	pages/js/sketch2.js	/^function draw() {$/;"	f
+elt.onload	pages/libraries/p5.dom.js	/^    }else{$/;"	f
+env	pages/libraries/p5.sound.js	/^var env;$/;"	f
+env	pages/libraries/p5.sound.js	/^var env;$/;"	v
+fft	pages/libraries/p5.sound.js	/^var fft;$/;"	f
 fft	pages/libraries/p5.sound.js	/^var fft;$/;"	v
-p5.FFT	pages/libraries/p5.sound.js	/^  var p5sound = master;$/;"	c
-p5.FFT.setInput	pages/libraries/p5.sound.js	/^  p5.FFT.prototype.setInput = function (source) {$/;"	m
-p5.FFT.waveform	pages/libraries/p5.sound.js	/^  p5.FFT.prototype.waveform = function () {$/;"	m
-p5.FFT.analyze	pages/libraries/p5.sound.js	/^  p5.FFT.prototype.analyze = function () {$/;"	m
-p5.FFT.getEnergy	pages/libraries/p5.sound.js	/^  p5.FFT.prototype.getEnergy = function (frequency1, frequency2) {$/;"	m
-p5.FFT.getFreq	pages/libraries/p5.sound.js	/^  p5.FFT.prototype.getFreq = function (freq1, freq2) {$/;"	m
-p5.FFT.smooth	pages/libraries/p5.sound.js	/^  p5.FFT.prototype.smooth = function (s) {$/;"	m
 fft.freqToFloat	pages/libraries/p5.sound.js	/^  var freqToFloat = function (fft) {$/;"	f
 fft.freqToInt	pages/libraries/p5.sound.js	/^  var freqToInt = function (fft) {$/;"	f
 fft.timeToFloat	pages/libraries/p5.sound.js	/^  var timeToFloat = function (fft) {$/;"	f
 fft.timeToInt	pages/libraries/p5.sound.js	/^  var timeToInt = function (fft) {$/;"	f
-fft	pages/libraries/p5.sound.js	/^var fft;$/;"	f
-Tone_core_Tone	pages/libraries/p5.sound.js	/^var Tone_core_Tone;$/;"	v
-Tone_core_Tone.isUndef	pages/libraries/p5.sound.js	/^  function isUndef(val) {$/;"	f
-AudioContext	pages/libraries/p5.sound.js	/^  if (typeof AudioContext.prototype.createGain !== 'function') {$/;"	c
-AudioContext.createGain	pages/libraries/p5.sound.js	/^    AudioContext.prototype.createGain = AudioContext.prototype.createGainNode;$/;"	m
-AudioContext.createDelay	pages/libraries/p5.sound.js	/^    AudioContext.prototype.createDelay = AudioContext.prototype.createDelayNode;$/;"	m
-AudioContext.createPeriodicWave	pages/libraries/p5.sound.js	/^    AudioContext.prototype.createPeriodicWave = AudioContext.prototype.createWaveTable;$/;"	m
-AudioBufferSourceNode	pages/libraries/p5.sound.js	/^  if (typeof AudioBufferSourceNode.prototype.start !== 'function') {$/;"	c
-AudioBufferSourceNode.start	pages/libraries/p5.sound.js	/^    AudioBufferSourceNode.prototype.start = AudioBufferSourceNode.prototype.noteGrainOn;$/;"	m
-AudioBufferSourceNode.stop	pages/libraries/p5.sound.js	/^    AudioBufferSourceNode.prototype.stop = AudioBufferSourceNode.prototype.noteOff;$/;"	m
-OscillatorNode	pages/libraries/p5.sound.js	/^  if (typeof OscillatorNode.prototype.start !== 'function') {$/;"	c
-OscillatorNode.start	pages/libraries/p5.sound.js	/^    OscillatorNode.prototype.start = OscillatorNode.prototype.noteOn;$/;"	m
-OscillatorNode.stop	pages/libraries/p5.sound.js	/^    OscillatorNode.prototype.stop = OscillatorNode.prototype.noteOff;$/;"	m
-OscillatorNode.setPeriodicWave	pages/libraries/p5.sound.js	/^    OscillatorNode.prototype.setPeriodicWave = OscillatorNode.prototype.setWaveTable;$/;"	m
-AudioNode	pages/libraries/p5.sound.js	/^  if (!window.Tone) {$/;"	c
-AudioNode._nativeConnect	pages/libraries/p5.sound.js	/^    AudioNode.prototype._nativeConnect = AudioNode.prototype.connect;$/;"	m
-AudioNode.connect	pages/libraries/p5.sound.js	/^    AudioNode.prototype.connect = function (B, outNum, inNum) {$/;"	m
-Tone_core_Tone.Tone	pages/libraries/p5.sound.js	/^  var Tone = function (inputs, outputs) {$/;"	f
-Tone	pages/libraries/p5.sound.js	/^  Tone.context = audioContext;$/;"	c
-Tone.context	pages/libraries/p5.sound.js	/^  Tone.prototype.context = Tone.context;$/;"	m
-Tone.bufferSize	pages/libraries/p5.sound.js	/^  Tone.prototype.bufferSize = 2048;$/;"	m
-Tone.bufferTime	pages/libraries/p5.sound.js	/^  Tone.prototype.bufferTime = Tone.prototype.bufferSize \/ Tone.context.sampleRate;$/;"	m
-Tone.connect	pages/libraries/p5.sound.js	/^  Tone.prototype.connect = function (unit, outputNum, inputNum) {$/;"	m
-Tone.disconnect	pages/libraries/p5.sound.js	/^  Tone.prototype.disconnect = function (outputNum) {$/;"	m
-Tone.connectSeries	pages/libraries/p5.sound.js	/^  Tone.prototype.connectSeries = function () {$/;"	m
-Tone.connectParallel	pages/libraries/p5.sound.js	/^  Tone.prototype.connectParallel = function () {$/;"	m
-Tone.chain	pages/libraries/p5.sound.js	/^  Tone.prototype.chain = function () {$/;"	m
-Tone.fan	pages/libraries/p5.sound.js	/^  Tone.prototype.fan = function () {$/;"	m
-AudioNode.chain	pages/libraries/p5.sound.js	/^  AudioNode.prototype.chain = Tone.prototype.chain;$/;"	m
-AudioNode.fan	pages/libraries/p5.sound.js	/^  AudioNode.prototype.fan = Tone.prototype.fan;$/;"	m
-Tone.defaultArg	pages/libraries/p5.sound.js	/^  Tone.prototype.defaultArg = function (given, fallback) {$/;"	m
-Tone.optionsObject	pages/libraries/p5.sound.js	/^  Tone.prototype.optionsObject = function (values, keys, defaults) {$/;"	m
-Tone.isUndef	pages/libraries/p5.sound.js	/^  Tone.prototype.isUndef = isUndef;$/;"	m
-Tone.equalPowerScale	pages/libraries/p5.sound.js	/^  Tone.prototype.equalPowerScale = function (percent) {$/;"	m
-Tone.logScale	pages/libraries/p5.sound.js	/^  Tone.prototype.logScale = function (gain) {$/;"	m
-Tone.expScale	pages/libraries/p5.sound.js	/^  Tone.prototype.expScale = function (gain) {$/;"	m
-Tone.dbToGain	pages/libraries/p5.sound.js	/^  Tone.prototype.dbToGain = function (db) {$/;"	m
-Tone.gainToDb	pages/libraries/p5.sound.js	/^  Tone.prototype.gainToDb = function (gain) {$/;"	m
-Tone.interpolate	pages/libraries/p5.sound.js	/^  Tone.prototype.interpolate = function (input, outputMin, outputMax) {$/;"	m
-Tone.normalize	pages/libraries/p5.sound.js	/^  Tone.prototype.normalize = function (input, inputMin, inputMax) {$/;"	m
-Tone.dispose	pages/libraries/p5.sound.js	/^  Tone.prototype.dispose = function () {$/;"	m
-Tone.noGC	pages/libraries/p5.sound.js	/^  Tone.prototype.noGC = function () {$/;"	m
-AudioNode.noGC	pages/libraries/p5.sound.js	/^  AudioNode.prototype.noGC = function () {$/;"	m
-Tone.now	pages/libraries/p5.sound.js	/^  Tone.prototype.now = function () {$/;"	m
-Tone.samplesToSeconds	pages/libraries/p5.sound.js	/^  Tone.prototype.samplesToSeconds = function (samples) {$/;"	m
-Tone.toSamples	pages/libraries/p5.sound.js	/^  Tone.prototype.toSamples = function (time) {$/;"	m
-Tone.toSeconds	pages/libraries/p5.sound.js	/^  Tone.prototype.toSeconds = function (time, now) {$/;"	m
-Tone.frequencyToSeconds	pages/libraries/p5.sound.js	/^  Tone.prototype.frequencyToSeconds = function (freq) {$/;"	m
-Tone.secondsToFrequency	pages/libraries/p5.sound.js	/^  Tone.prototype.secondsToFrequency = function (seconds) {$/;"	m
-Tone._initAudioContext	pages/libraries/p5.sound.js	/^  var newContextCallbacks = [];$/;"	f
-Tone.context	pages/libraries/p5.sound.js	/^    Tone.prototype.context = ctx;$/;"	m
-Tone.setContext	pages/libraries/p5.sound.js	/^  };$/;"	f
-Tone.extend.TempConstructor	pages/libraries/p5.sound.js	/^    function TempConstructor() {$/;"	f
-TempConstructor	pages/libraries/p5.sound.js	/^    }$/;"	c
-child	pages/libraries/p5.sound.js	/^    child.prototype = new TempConstructor();$/;"	c
-child.constructor	pages/libraries/p5.sound.js	/^    child.prototype.constructor = child;$/;"	m
-Tone.extend	pages/libraries/p5.sound.js	/^  };$/;"	f
-Tone.startMobile	pages/libraries/p5.sound.js	/^  };$/;"	f
-Tone_core_Tone	pages/libraries/p5.sound.js	/^var Tone_core_Tone;$/;"	f
-Tone_signal_SignalBase	pages/libraries/p5.sound.js	/^var Tone_signal_SignalBase;$/;"	v
-Tone.SignalBase	pages/libraries/p5.sound.js	/^  'use strict';$/;"	f
-Tone.SignalBase	pages/libraries/p5.sound.js	/^  Tone.extend(Tone.SignalBase);$/;"	c
-Tone.SignalBase.connect	pages/libraries/p5.sound.js	/^  Tone.SignalBase.prototype.connect = function (node, outputNumber, inputNumber) {$/;"	m
-Tone.SignalBase.dispose	pages/libraries/p5.sound.js	/^  Tone.SignalBase.prototype.dispose = function () {$/;"	m
-Tone.SignalBase.Tone	pages/libraries/p5.sound.js	/^  Tone.SignalBase.prototype.dispose = function () {$/;"	c
-Tone_signal_SignalBase	pages/libraries/p5.sound.js	/^var Tone_signal_SignalBase;$/;"	f
-Tone_signal_WaveShaper	pages/libraries/p5.sound.js	/^var Tone_signal_WaveShaper;$/;"	v
-Tone.WaveShaper	pages/libraries/p5.sound.js	/^  'use strict';$/;"	c
-Tone.WaveShaper.setMap	pages/libraries/p5.sound.js	/^  Tone.WaveShaper.prototype.setMap = function (mapping) {$/;"	m
-Tone.WaveShaper.setCurve	pages/libraries/p5.sound.js	/^  Tone.WaveShaper.prototype.setCurve = function (mapping) {$/;"	m
-Tone.WaveShaper.setOversample	pages/libraries/p5.sound.js	/^  Tone.WaveShaper.prototype.setOversample = function (oversampling) {$/;"	m
-Tone.WaveShaper._isSafari	pages/libraries/p5.sound.js	/^  Tone.WaveShaper.prototype._isSafari = function () {$/;"	m
-Tone.WaveShaper.dispose	pages/libraries/p5.sound.js	/^  Tone.WaveShaper.prototype.dispose = function () {$/;"	m
-Tone.WaveShaper.Tone	pages/libraries/p5.sound.js	/^  Tone.WaveShaper.prototype.dispose = function () {$/;"	c
-Tone_signal_WaveShaper	pages/libraries/p5.sound.js	/^var Tone_signal_WaveShaper;$/;"	f
-Tone_signal_Signal	pages/libraries/p5.sound.js	/^var Tone_signal_Signal;$/;"	v
-Tone.Signal	pages/libraries/p5.sound.js	/^  'use strict';$/;"	c
-Tone.Signal.getValue	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.getValue = function () {$/;"	m
-Tone.Signal.setValue	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.setValue = function (value) {$/;"	m
-Tone.Signal.setValueAtTime	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.setValueAtTime = function (value, time) {$/;"	m
-Tone.Signal.setCurrentValueNow	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.setCurrentValueNow = function (now) {$/;"	m
-Tone.Signal.linearRampToValueAtTime	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.linearRampToValueAtTime = function (value, endTime) {$/;"	m
-Tone.Signal.exponentialRampToValueAtTime	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.exponentialRampToValueAtTime = function (value, endTime) {$/;"	m
-Tone.Signal.exponentialRampToValueNow	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.exponentialRampToValueNow = function (value, endTime) {$/;"	m
-Tone.Signal.linearRampToValueNow	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.linearRampToValueNow = function (value, endTime) {$/;"	m
-Tone.Signal.setTargetAtTime	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.setTargetAtTime = function (value, startTime, timeConstant) {$/;"	m
-Tone.Signal.setValueCurveAtTime	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.setValueCurveAtTime = function (values, startTime, duration) {$/;"	m
-Tone.Signal.cancelScheduledValues	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.cancelScheduledValues = function (startTime) {$/;"	m
-Tone.Signal.sync	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.sync = function (signal, ratio) {$/;"	m
-Tone.Signal.unsync	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.unsync = function () {$/;"	m
-Tone.Signal.dispose	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.dispose = function () {$/;"	m
-Tone.Signal.Tone	pages/libraries/p5.sound.js	/^  Tone.Signal.prototype.dispose = function () {$/;"	c
-Tone_signal_Signal	pages/libraries/p5.sound.js	/^var Tone_signal_Signal;$/;"	f
-Tone_signal_Add	pages/libraries/p5.sound.js	/^var Tone_signal_Add;$/;"	v
-Tone.Add	pages/libraries/p5.sound.js	/^  'use strict';$/;"	c
-Tone.Add.setValue	pages/libraries/p5.sound.js	/^  Tone.Add.prototype.setValue = function (value) {$/;"	m
-Tone.Add.dispose	pages/libraries/p5.sound.js	/^  Tone.Add.prototype.dispose = function () {$/;"	m
-Tone.Add.Tone	pages/libraries/p5.sound.js	/^  Tone.Add.prototype.dispose = function () {$/;"	c
-Tone_signal_Add	pages/libraries/p5.sound.js	/^var Tone_signal_Add;$/;"	f
-Tone_signal_Multiply	pages/libraries/p5.sound.js	/^var Tone_signal_Multiply;$/;"	v
-Tone.Multiply	pages/libraries/p5.sound.js	/^  'use strict';$/;"	c
-Tone.Multiply.setValue	pages/libraries/p5.sound.js	/^  Tone.Multiply.prototype.setValue = function (value) {$/;"	m
-Tone.Multiply.dispose	pages/libraries/p5.sound.js	/^  Tone.Multiply.prototype.dispose = function () {$/;"	m
-Tone.Multiply.Tone	pages/libraries/p5.sound.js	/^  Tone.Multiply.prototype.dispose = function () {$/;"	c
-Tone_signal_Multiply	pages/libraries/p5.sound.js	/^var Tone_signal_Multiply;$/;"	f
-Tone_signal_Scale	pages/libraries/p5.sound.js	/^var Tone_signal_Scale;$/;"	v
-Tone.Scale	pages/libraries/p5.sound.js	/^  'use strict';$/;"	c
-Tone.Scale.setMin	pages/libraries/p5.sound.js	/^  Tone.Scale.prototype.setMin = function (min) {$/;"	m
-Tone.Scale.setMax	pages/libraries/p5.sound.js	/^  Tone.Scale.prototype.setMax = function (max) {$/;"	m
-Tone.Scale._setRange	pages/libraries/p5.sound.js	/^  Tone.Scale.prototype._setRange = function () {$/;"	m
-Tone.Scale.dispose	pages/libraries/p5.sound.js	/^  Tone.Scale.prototype.dispose = function () {$/;"	m
-Tone.Scale.Tone	pages/libraries/p5.sound.js	/^  Tone.Scale.prototype.dispose = function () {$/;"	c
-Tone_signal_Scale	pages/libraries/p5.sound.js	/^var Tone_signal_Scale;$/;"	f
-signal	pages/libraries/p5.sound.js	/^var signal;$/;"	v
-p5.Signal	pages/libraries/p5.sound.js	/^  Tone.setContext(p5sound.audiocontext);$/;"	f
-Signal	pages/libraries/p5.sound.js	/^  };$/;"	c
-Signal.fade	pages/libraries/p5.sound.js	/^  Signal.prototype.fade = Signal.prototype.linearRampToValueAtTime;$/;"	m
-Mult	pages/libraries/p5.sound.js	/^  Signal.prototype.fade = Signal.prototype.linearRampToValueAtTime;$/;"	c
-Mult.fade	pages/libraries/p5.sound.js	/^  Mult.prototype.fade = Signal.prototype.fade;$/;"	m
-Add	pages/libraries/p5.sound.js	/^  Mult.prototype.fade = Signal.prototype.fade;$/;"	c
-Add.fade	pages/libraries/p5.sound.js	/^  Add.prototype.fade = Signal.prototype.fade;$/;"	m
-Scale	pages/libraries/p5.sound.js	/^  Add.prototype.fade = Signal.prototype.fade;$/;"	c
-Scale.fade	pages/libraries/p5.sound.js	/^  Scale.prototype.fade = Signal.prototype.fade;$/;"	m
-Signal.setInput	pages/libraries/p5.sound.js	/^  Signal.prototype.setInput = function (_input) {$/;"	m
-Mult.setInput	pages/libraries/p5.sound.js	/^  Mult.prototype.setInput = Signal.prototype.setInput;$/;"	m
-Add.setInput	pages/libraries/p5.sound.js	/^  Add.prototype.setInput = Signal.prototype.setInput;$/;"	m
-Scale.setInput	pages/libraries/p5.sound.js	/^  Scale.prototype.setInput = Signal.prototype.setInput;$/;"	m
-Signal.add	pages/libraries/p5.sound.js	/^  Signal.prototype.add = function (num) {$/;"	m
-Mult.add	pages/libraries/p5.sound.js	/^  Mult.prototype.add = Signal.prototype.add;$/;"	m
-Add.add	pages/libraries/p5.sound.js	/^  Add.prototype.add = Signal.prototype.add;$/;"	m
-Scale.add	pages/libraries/p5.sound.js	/^  Scale.prototype.add = Signal.prototype.add;$/;"	m
-Signal.mult	pages/libraries/p5.sound.js	/^  Signal.prototype.mult = function (num) {$/;"	m
-Mult.mult	pages/libraries/p5.sound.js	/^  Mult.prototype.mult = Signal.prototype.mult;$/;"	m
-Add.mult	pages/libraries/p5.sound.js	/^  Add.prototype.mult = Signal.prototype.mult;$/;"	m
-Scale.mult	pages/libraries/p5.sound.js	/^  Scale.prototype.mult = Signal.prototype.mult;$/;"	m
-Signal.scale	pages/libraries/p5.sound.js	/^  Signal.prototype.scale = function (inMin, inMax, outMin, outMax) {$/;"	m
-Mult.scale	pages/libraries/p5.sound.js	/^  Mult.prototype.scale = Signal.prototype.scale;$/;"	m
-Add.scale	pages/libraries/p5.sound.js	/^  Add.prototype.scale = Signal.prototype.scale;$/;"	m
-Scale.scale	pages/libraries/p5.sound.js	/^  Scale.prototype.scale = Signal.prototype.scale;$/;"	m
-signal	pages/libraries/p5.sound.js	/^var signal;$/;"	f
-oscillator	pages/libraries/p5.sound.js	/^var oscillator;$/;"	v
-p5.Oscillator	pages/libraries/p5.sound.js	/^  var Scale = Tone_signal_Scale;$/;"	c
-p5.Oscillator.start	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.start = function (time, f) {$/;"	m
-p5.Oscillator.stop	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.stop = function (time) {$/;"	m
-p5.Oscillator.amp	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.amp = function (vol, rampTime, tFromNow) {$/;"	m
-p5.Oscillator.fade	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.fade = p5.Oscillator.prototype.amp;$/;"	m
-p5.Oscillator.getAmp	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.getAmp = function () {$/;"	m
-p5.Oscillator.freq	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.freq = function (val, rampTime, tFromNow) {$/;"	m
-p5.Oscillator.getFreq	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.getFreq = function () {$/;"	m
-p5.Oscillator.setType	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.setType = function (type) {$/;"	m
-p5.Oscillator.getType	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.getType = function () {$/;"	m
-p5.Oscillator.connect	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.connect = function (unit) {$/;"	m
-p5.Oscillator.disconnect	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.disconnect = function (unit) {$/;"	m
-p5.Oscillator.pan	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.pan = function (pval, tFromNow) {$/;"	m
-p5.Oscillator.getPan	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.getPan = function () {$/;"	m
-p5.Oscillator.dispose	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.dispose = function () {$/;"	m
-p5.Oscillator.phase	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.phase = function (p) {$/;"	m
-oscillator.sigChain	pages/libraries/p5.sound.js	/^  var sigChain = function (o, mathObj, thisChain, nextChain, type) {$/;"	f
-p5.Oscillator.add	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.add = function (num) {$/;"	m
-p5.Oscillator.mult	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.mult = function (num) {$/;"	m
-p5.Oscillator.scale	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.scale = function (inMin, inMax, outMin, outMax) {$/;"	m
-p5.SinOsc	pages/libraries/p5.sound.js	/^  };$/;"	f
-p5.SinOsc	pages/libraries/p5.sound.js	/^  };$/;"	c
-p5.TriOsc	pages/libraries/p5.sound.js	/^  p5.SinOsc.prototype = Object.create(p5.Oscillator.prototype);$/;"	f
-p5.TriOsc	pages/libraries/p5.sound.js	/^  };$/;"	c
-p5.SawOsc	pages/libraries/p5.sound.js	/^  p5.TriOsc.prototype = Object.create(p5.Oscillator.prototype);$/;"	f
-p5.SawOsc	pages/libraries/p5.sound.js	/^  };$/;"	c
-p5.SqrOsc	pages/libraries/p5.sound.js	/^  p5.SawOsc.prototype = Object.create(p5.Oscillator.prototype);$/;"	f
-p5.SqrOsc	pages/libraries/p5.sound.js	/^  };$/;"	c
-oscillator	pages/libraries/p5.sound.js	/^var oscillator;$/;"	f
-env	pages/libraries/p5.sound.js	/^var env;$/;"	v
-p5.Env	pages/libraries/p5.sound.js	/^  var wasTriggered = false;$/;"	c
-p5.Env.set	pages/libraries/p5.sound.js	/^  p5.Env.prototype.set = function (t1, l1, t2, l2, t3, l3, t4, l4) {$/;"	m
-p5.Env.setInput	pages/libraries/p5.sound.js	/^  p5.Env.prototype.setInput = function (unit) {$/;"	m
-p5.Env.ctrl	pages/libraries/p5.sound.js	/^  p5.Env.prototype.ctrl = function (unit) {$/;"	m
-p5.Env.play	pages/libraries/p5.sound.js	/^  p5.Env.prototype.play = function (unit, secondsFromNow) {$/;"	m
-p5.Env.triggerAttack	pages/libraries/p5.sound.js	/^  p5.Env.prototype.triggerAttack = function (unit, secondsFromNow) {$/;"	m
-p5.Env.triggerRelease	pages/libraries/p5.sound.js	/^  p5.Env.prototype.triggerRelease = function (unit, secondsFromNow) {$/;"	m
-p5.Env.connect	pages/libraries/p5.sound.js	/^  p5.Env.prototype.connect = function (unit) {$/;"	m
-p5.Env.disconnect	pages/libraries/p5.sound.js	/^  p5.Env.prototype.disconnect = function (unit) {$/;"	m
-p5.Env.add	pages/libraries/p5.sound.js	/^  p5.Env.prototype.add = function (num) {$/;"	m
-p5.Env.return	pages/libraries/p5.sound.js	/^    var nextChain = this.output;$/;"	c
-p5.Env.mult	pages/libraries/p5.sound.js	/^  p5.Env.prototype.mult = function (num) {$/;"	m
-p5.Env.scale	pages/libraries/p5.sound.js	/^  p5.Env.prototype.scale = function (inMin, inMax, outMin, outMax) {$/;"	m
-p5.Env.dispose	pages/libraries/p5.sound.js	/^  p5.Env.prototype.dispose = function () {$/;"	m
-env	pages/libraries/p5.sound.js	/^var env;$/;"	f
-pulse	pages/libraries/p5.sound.js	/^var pulse;$/;"	v
-p5.Pulse	pages/libraries/p5.sound.js	/^  var p5sound = master;$/;"	c
-p5.Pulse.width	pages/libraries/p5.sound.js	/^  p5.Pulse.prototype.width = function (w) {$/;"	m
-p5.Pulse.start	pages/libraries/p5.sound.js	/^  p5.Pulse.prototype.start = function (f, time) {$/;"	m
-p5.Pulse.stop	pages/libraries/p5.sound.js	/^  p5.Pulse.prototype.stop = function (time) {$/;"	m
-p5.Pulse.freq	pages/libraries/p5.sound.js	/^  p5.Pulse.prototype.freq = function (val, rampTime, tFromNow) {$/;"	m
-pulse.createDCOffset	pages/libraries/p5.sound.js	/^  function createDCOffset() {$/;"	f
-pulse	pages/libraries/p5.sound.js	/^var pulse;$/;"	f
-noise	pages/libraries/p5.sound.js	/^var noise;$/;"	v
-p5.Noise	pages/libraries/p5.sound.js	/^  var p5sound = master;$/;"	c
-noise._whiteNoise	pages/libraries/p5.sound.js	/^  var _whiteNoise = function () {$/;"	f
-noise._pinkNoise	pages/libraries/p5.sound.js	/^  var _pinkNoise = function () {$/;"	f
-noise._brownNoise	pages/libraries/p5.sound.js	/^  var _brownNoise = function () {$/;"	f
-p5.Noise.setType	pages/libraries/p5.sound.js	/^  p5.Noise.prototype.setType = function (type) {$/;"	m
-p5.Noise.getType	pages/libraries/p5.sound.js	/^  p5.Noise.prototype.getType = function () {$/;"	m
-p5.Noise.start	pages/libraries/p5.sound.js	/^  p5.Noise.prototype.start = function () {$/;"	m
-p5.Noise.stop	pages/libraries/p5.sound.js	/^  p5.Noise.prototype.stop = function () {$/;"	m
-p5.Noise.dispose	pages/libraries/p5.sound.js	/^  p5.Noise.prototype.dispose = function () {$/;"	m
+filter	pages/libraries/p5.sound.js	/^var filter;$/;"	f
+filter	pages/libraries/p5.sound.js	/^var filter;$/;"	v
+function.handleFileSelect	pages/libraries/p5.dom.js	/^      function handleFileSelect(evt) {$/;"	f
+function.makeLoader	pages/libraries/p5.dom.js	/^          function makeLoader(theFile) {$/;"	f
+gain	pages/libraries/p5.sound.js	/^var gain;$/;"	f
+gain	pages/libraries/p5.sound.js	/^var gain;$/;"	v
+helpers	pages/libraries/p5.sound.js	/^var helpers;$/;"	f
+helpers	pages/libraries/p5.sound.js	/^var helpers;$/;"	v
+homepage	package.json	/^  "homepage": "https:\/\/github.com\/tatecarson\/rhizomep5js#readme"$/;"	f
+license	package.json	/^  "license": "ISC",$/;"	f
+looper	pages/libraries/p5.sound.js	/^var looper;$/;"	f
+looper	pages/libraries/p5.sound.js	/^var looper;$/;"	v
+looper.playNextPart	pages/libraries/p5.sound.js	/^  function playNextPart(aScore) {$/;"	f
+main	package.json	/^  "main": "config.js",$/;"	f
+master	pages/libraries/p5.sound.js	/^var master;$/;"	f
+master	pages/libraries/p5.sound.js	/^var master;$/;"	v
+master.Master	pages/libraries/p5.sound.js	/^  var Master = function () {$/;"	c
+metro	pages/libraries/p5.sound.js	/^var metro;$/;"	f
+metro	pages/libraries/p5.sound.js	/^var metro;$/;"	v
+name	package.json	/^  "name": "rhizome",$/;"	f
 noise	pages/libraries/p5.sound.js	/^var noise;$/;"	f
-audioin	pages/libraries/p5.sound.js	/^var audioin;$/;"	v
+noise	pages/libraries/p5.sound.js	/^var noise;$/;"	v
+noise._brownNoise	pages/libraries/p5.sound.js	/^  var _brownNoise = function () {$/;"	f
+noise._pinkNoise	pages/libraries/p5.sound.js	/^  var _pinkNoise = function () {$/;"	f
+noise._whiteNoise	pages/libraries/p5.sound.js	/^  var _whiteNoise = function () {$/;"	f
+offlineContext.oncomplete	pages/libraries/p5.sound.js	/^    offlineContext.startRendering();$/;"	c
+oscillator	pages/libraries/p5.sound.js	/^var oscillator;$/;"	f
+oscillator	pages/libraries/p5.sound.js	/^var oscillator;$/;"	v
+oscillator.sigChain	pages/libraries/p5.sound.js	/^  var sigChain = function (o, mathObj, thisChain, nextChain, type) {$/;"	f
+p5	pages/libraries/p5.dom.js	/^  };$/;"	c
+p5	pages/libraries/p5.sound.js	/^  var audiocontext = new window.AudioContext();$/;"	c
+p5.AUDIO	pages/libraries/p5.dom.js	/^  p5.prototype.AUDIO = 'audio';$/;"	m
+p5.Amplitude	pages/libraries/p5.sound.js	/^  var p5sound = master;$/;"	c
+p5.Amplitude._audioProcess	pages/libraries/p5.sound.js	/^  p5.Amplitude.prototype._audioProcess = function (event) {$/;"	m
+p5.Amplitude.connect	pages/libraries/p5.sound.js	/^  p5.Amplitude.prototype.connect = function (unit) {$/;"	m
+p5.Amplitude.disconnect	pages/libraries/p5.sound.js	/^  p5.Amplitude.prototype.disconnect = function (unit) {$/;"	m
+p5.Amplitude.getLevel	pages/libraries/p5.sound.js	/^  p5.Amplitude.prototype.getLevel = function (channel) {$/;"	m
+p5.Amplitude.setInput	pages/libraries/p5.sound.js	/^  p5.Amplitude.prototype.setInput = function (source, smoothing) {$/;"	m
+p5.Amplitude.smooth	pages/libraries/p5.sound.js	/^  p5.Amplitude.prototype.smooth = function (s) {$/;"	m
+p5.Amplitude.toggleNormalize	pages/libraries/p5.sound.js	/^  p5.Amplitude.prototype.toggleNormalize = function (bool) {$/;"	m
 p5.AudioIn	pages/libraries/p5.sound.js	/^  var p5sound = master;$/;"	c
-p5.AudioIn.start	pages/libraries/p5.sound.js	/^  p5.AudioIn.prototype.start = function () {$/;"	m
-p5.AudioIn.var.constraints.audio	pages/libraries/p5.sound.js	/^      var constraints = { audio: { optional: [{ sourceId: audioSource }] } };$/;"	p
-audioin	pages/libraries/p5.sound.js	/^var audioin;$/;"	f
-p5.AudioIn.stop	pages/libraries/p5.sound.js	/^  p5.AudioIn.prototype.stop = function () {$/;"	m
-p5.AudioIn.connect	pages/libraries/p5.sound.js	/^  p5.AudioIn.prototype.connect = function (unit) {$/;"	m
-p5.AudioIn.disconnect	pages/libraries/p5.sound.js	/^  p5.AudioIn.prototype.disconnect = function (unit) {$/;"	m
-p5.AudioIn.getLevel	pages/libraries/p5.sound.js	/^  p5.AudioIn.prototype.getLevel = function (smoothing) {$/;"	m
 p5.AudioIn._gotSources	pages/libraries/p5.sound.js	/^  p5.AudioIn.prototype._gotSources = function (sourceInfos) {$/;"	m
 p5.AudioIn.amp	pages/libraries/p5.sound.js	/^  p5.AudioIn.prototype.amp = function (vol, t) {$/;"	m
-p5.AudioIn.listSources	pages/libraries/p5.sound.js	/^  p5.AudioIn.prototype.listSources = function () {$/;"	m
-p5.AudioIn.getSources	pages/libraries/p5.sound.js	/^  p5.AudioIn.prototype.getSources = function (callback) {$/;"	m
-p5.AudioIn.setSource	pages/libraries/p5.sound.js	/^  p5.AudioIn.prototype.setSource = function (num) {$/;"	m
+p5.AudioIn.connect	pages/libraries/p5.sound.js	/^  p5.AudioIn.prototype.connect = function (unit) {$/;"	m
+p5.AudioIn.disconnect	pages/libraries/p5.sound.js	/^  p5.AudioIn.prototype.disconnect = function (unit) {$/;"	m
 p5.AudioIn.dispose	pages/libraries/p5.sound.js	/^  p5.AudioIn.prototype.dispose = function () {$/;"	m
-filter	pages/libraries/p5.sound.js	/^var filter;$/;"	v
+p5.AudioIn.getLevel	pages/libraries/p5.sound.js	/^  p5.AudioIn.prototype.getLevel = function (smoothing) {$/;"	m
+p5.AudioIn.getSources	pages/libraries/p5.sound.js	/^  p5.AudioIn.prototype.getSources = function (callback) {$/;"	m
+p5.AudioIn.listSources	pages/libraries/p5.sound.js	/^  p5.AudioIn.prototype.listSources = function () {$/;"	m
+p5.AudioIn.setSource	pages/libraries/p5.sound.js	/^  p5.AudioIn.prototype.setSource = function (num) {$/;"	m
+p5.AudioIn.start	pages/libraries/p5.sound.js	/^  p5.AudioIn.prototype.start = function () {$/;"	m
+p5.AudioIn.stop	pages/libraries/p5.sound.js	/^  p5.AudioIn.prototype.stop = function () {$/;"	m
+p5.AudioIn.var.constraints.audio	pages/libraries/p5.sound.js	/^      var constraints = { audio: { optional: [{ sourceId: audioSource }] } };$/;"	p
+p5.BandPass	pages/libraries/p5.sound.js	/^  p5.HighPass.prototype = Object.create(p5.Filter.prototype);$/;"	f
+p5.BandPass	pages/libraries/p5.sound.js	/^  };$/;"	c
+p5.Convolver	pages/libraries/p5.sound.js	/^  };$/;"	c
+p5.Convolver._loadBuffer	pages/libraries/p5.sound.js	/^  p5.Convolver.prototype._loadBuffer = function (path, callback) {$/;"	m
+p5.Convolver.addImpulse	pages/libraries/p5.sound.js	/^  p5.Convolver.prototype.addImpulse = function (path, callback) {$/;"	m
+p5.Convolver.dispose	pages/libraries/p5.sound.js	/^  p5.Convolver.prototype.dispose = function () {$/;"	m
+p5.Convolver.impulses	pages/libraries/p5.sound.js	/^  p5.Convolver.prototype.impulses = [];$/;"	m
+p5.Convolver.process	pages/libraries/p5.sound.js	/^  p5.Convolver.prototype.process = function (src) {$/;"	m
+p5.Convolver.resetImpulse	pages/libraries/p5.sound.js	/^  p5.Convolver.prototype.resetImpulse = function (path, callback) {$/;"	m
+p5.Convolver.set	pages/libraries/p5.sound.js	/^  p5.Convolver.prototype.set = null;$/;"	m
+p5.Convolver.toggleImpulse	pages/libraries/p5.sound.js	/^  p5.Convolver.prototype.toggleImpulse = function (id) {$/;"	m
+p5.Delay	pages/libraries/p5.sound.js	/^  var Filter = filter;$/;"	c
+p5.Delay.amp	pages/libraries/p5.sound.js	/^  p5.Delay.prototype.amp = function (vol, rampTime, tFromNow) {$/;"	m
+p5.Delay.connect	pages/libraries/p5.sound.js	/^  p5.Delay.prototype.connect = function (unit) {$/;"	m
+p5.Delay.delayTime	pages/libraries/p5.sound.js	/^  p5.Delay.prototype.delayTime = function (t) {$/;"	m
+p5.Delay.disconnect	pages/libraries/p5.sound.js	/^  p5.Delay.prototype.disconnect = function () {$/;"	m
+p5.Delay.feedback	pages/libraries/p5.sound.js	/^  p5.Delay.prototype.feedback = function (f) {$/;"	m
+p5.Delay.filter	pages/libraries/p5.sound.js	/^  p5.Delay.prototype.filter = function (freq, q) {$/;"	m
+p5.Delay.process	pages/libraries/p5.sound.js	/^  p5.Delay.prototype.process = function (src, _delayTime, _feedback, _filter) {$/;"	m
+p5.Delay.setType	pages/libraries/p5.sound.js	/^  p5.Delay.prototype.setType = function (t) {$/;"	m
+p5.Element	pages/libraries/p5.dom.js	/^  };$/;"	c
+p5.Element.addClass	pages/libraries/p5.dom.js	/^  p5.Element.prototype.addClass = function(c) {$/;"	m
+p5.Element.attribute	pages/libraries/p5.dom.js	/^  p5.Element.prototype.attribute = function(attr, value) {$/;"	m
+p5.Element.child	pages/libraries/p5.dom.js	/^  p5.Element.prototype.child = function(c) {$/;"	m
+p5.Element.hide	pages/libraries/p5.dom.js	/^  p5.Element.prototype.hide = function() {$/;"	m
+p5.Element.html	pages/libraries/p5.dom.js	/^  p5.Element.prototype.html = function(html) {$/;"	m
+p5.Element.position	pages/libraries/p5.dom.js	/^  p5.Element.prototype.position = function() {$/;"	m
+p5.Element.remove	pages/libraries/p5.dom.js	/^  p5.Element.prototype.remove = function() {$/;"	m
+p5.Element.removeClass	pages/libraries/p5.dom.js	/^  p5.Element.prototype.removeClass = function(c) {$/;"	m
+p5.Element.rotate	pages/libraries/p5.dom.js	/^  p5.Element.prototype.rotate = function(){$/;"	m
+p5.Element.show	pages/libraries/p5.dom.js	/^  p5.Element.prototype.show = function() {$/;"	m
+p5.Element.size	pages/libraries/p5.dom.js	/^  p5.Element.prototype.size = function(w, h) {$/;"	m
+p5.Element.style	pages/libraries/p5.dom.js	/^  p5.Element.prototype.style = function(prop, val) {$/;"	m
+p5.Element.translate	pages/libraries/p5.dom.js	/^  p5.Element.prototype.translate = function(){$/;"	m
+p5.Element.value	pages/libraries/p5.dom.js	/^  p5.Element.prototype.value = function() {$/;"	m
+p5.Env	pages/libraries/p5.sound.js	/^  var wasTriggered = false;$/;"	c
+p5.Env.add	pages/libraries/p5.sound.js	/^  p5.Env.prototype.add = function (num) {$/;"	m
+p5.Env.connect	pages/libraries/p5.sound.js	/^  p5.Env.prototype.connect = function (unit) {$/;"	m
+p5.Env.ctrl	pages/libraries/p5.sound.js	/^  p5.Env.prototype.ctrl = function (unit) {$/;"	m
+p5.Env.disconnect	pages/libraries/p5.sound.js	/^  p5.Env.prototype.disconnect = function (unit) {$/;"	m
+p5.Env.dispose	pages/libraries/p5.sound.js	/^  p5.Env.prototype.dispose = function () {$/;"	m
+p5.Env.mult	pages/libraries/p5.sound.js	/^  p5.Env.prototype.mult = function (num) {$/;"	m
+p5.Env.play	pages/libraries/p5.sound.js	/^  p5.Env.prototype.play = function (unit, secondsFromNow) {$/;"	m
+p5.Env.return	pages/libraries/p5.sound.js	/^    var nextChain = this.output;$/;"	c
+p5.Env.scale	pages/libraries/p5.sound.js	/^  p5.Env.prototype.scale = function (inMin, inMax, outMin, outMax) {$/;"	m
+p5.Env.set	pages/libraries/p5.sound.js	/^  p5.Env.prototype.set = function (t1, l1, t2, l2, t3, l3, t4, l4) {$/;"	m
+p5.Env.setInput	pages/libraries/p5.sound.js	/^  p5.Env.prototype.setInput = function (unit) {$/;"	m
+p5.Env.triggerAttack	pages/libraries/p5.sound.js	/^  p5.Env.prototype.triggerAttack = function (unit, secondsFromNow) {$/;"	m
+p5.Env.triggerRelease	pages/libraries/p5.sound.js	/^  p5.Env.prototype.triggerRelease = function (unit, secondsFromNow) {$/;"	m
+p5.FFT	pages/libraries/p5.sound.js	/^  var p5sound = master;$/;"	c
+p5.FFT.analyze	pages/libraries/p5.sound.js	/^  p5.FFT.prototype.analyze = function () {$/;"	m
+p5.FFT.getEnergy	pages/libraries/p5.sound.js	/^  p5.FFT.prototype.getEnergy = function (frequency1, frequency2) {$/;"	m
+p5.FFT.getFreq	pages/libraries/p5.sound.js	/^  p5.FFT.prototype.getFreq = function (freq1, freq2) {$/;"	m
+p5.FFT.setInput	pages/libraries/p5.sound.js	/^  p5.FFT.prototype.setInput = function (source) {$/;"	m
+p5.FFT.smooth	pages/libraries/p5.sound.js	/^  p5.FFT.prototype.smooth = function (s) {$/;"	m
+p5.FFT.waveform	pages/libraries/p5.sound.js	/^  p5.FFT.prototype.waveform = function () {$/;"	m
+p5.File	pages/libraries/p5.dom.js	/^  };$/;"	c
 p5.Filter	pages/libraries/p5.sound.js	/^  var p5sound = master;$/;"	c
-p5.Filter.process	pages/libraries/p5.sound.js	/^  p5.Filter.prototype.process = function (src, freq, res) {$/;"	m
-p5.Filter.set	pages/libraries/p5.sound.js	/^  p5.Filter.prototype.set = function (freq, res, time) {$/;"	m
-p5.Filter.freq	pages/libraries/p5.sound.js	/^  p5.Filter.prototype.freq = function (freq, time) {$/;"	m
-p5.Filter.res	pages/libraries/p5.sound.js	/^  p5.Filter.prototype.res = function (res, time) {$/;"	m
-p5.Filter.setType	pages/libraries/p5.sound.js	/^  p5.Filter.prototype.setType = function (t) {$/;"	m
 p5.Filter.amp	pages/libraries/p5.sound.js	/^  p5.Filter.prototype.amp = function (vol, rampTime, tFromNow) {$/;"	m
 p5.Filter.connect	pages/libraries/p5.sound.js	/^  p5.Filter.prototype.connect = function (unit) {$/;"	m
 p5.Filter.disconnect	pages/libraries/p5.sound.js	/^  p5.Filter.prototype.disconnect = function () {$/;"	m
-p5.LowPass	pages/libraries/p5.sound.js	/^  };$/;"	f
-p5.LowPass	pages/libraries/p5.sound.js	/^  };$/;"	c
+p5.Filter.freq	pages/libraries/p5.sound.js	/^  p5.Filter.prototype.freq = function (freq, time) {$/;"	m
+p5.Filter.process	pages/libraries/p5.sound.js	/^  p5.Filter.prototype.process = function (src, freq, res) {$/;"	m
+p5.Filter.res	pages/libraries/p5.sound.js	/^  p5.Filter.prototype.res = function (res, time) {$/;"	m
+p5.Filter.set	pages/libraries/p5.sound.js	/^  p5.Filter.prototype.set = function (freq, res, time) {$/;"	m
+p5.Filter.setType	pages/libraries/p5.sound.js	/^  p5.Filter.prototype.setType = function (t) {$/;"	m
+p5.Gain	pages/libraries/p5.sound.js	/^  var p5sound = master;$/;"	c
+p5.Gain.amp	pages/libraries/p5.sound.js	/^  p5.Gain.prototype.amp = function (vol, rampTime, tFromNow) {$/;"	m
+p5.Gain.connect	pages/libraries/p5.sound.js	/^  p5.Gain.prototype.connect = function (unit) {$/;"	m
+p5.Gain.disconnect	pages/libraries/p5.sound.js	/^  p5.Gain.prototype.disconnect = function () {$/;"	m
+p5.Gain.setInput	pages/libraries/p5.sound.js	/^  p5.Gain.prototype.setInput = function (src) {$/;"	m
 p5.HighPass	pages/libraries/p5.sound.js	/^  p5.LowPass.prototype = Object.create(p5.Filter.prototype);$/;"	f
 p5.HighPass	pages/libraries/p5.sound.js	/^  };$/;"	c
-p5.BandPass	pages/libraries/p5.sound.js	/^  p5.HighPass.prototype = Object.create(p5.Filter.prototype);$/;"	f
-p5.BandPass	pages/libraries/p5.sound.js	/^  };$/;"	c
-filter	pages/libraries/p5.sound.js	/^var filter;$/;"	f
-delay	pages/libraries/p5.sound.js	/^var delay;$/;"	v
-p5.Delay	pages/libraries/p5.sound.js	/^  var Filter = filter;$/;"	c
-p5.Delay.process	pages/libraries/p5.sound.js	/^  p5.Delay.prototype.process = function (src, _delayTime, _feedback, _filter) {$/;"	m
-p5.Delay.delayTime	pages/libraries/p5.sound.js	/^  p5.Delay.prototype.delayTime = function (t) {$/;"	m
-p5.Delay.feedback	pages/libraries/p5.sound.js	/^  p5.Delay.prototype.feedback = function (f) {$/;"	m
-p5.Delay.filter	pages/libraries/p5.sound.js	/^  p5.Delay.prototype.filter = function (freq, q) {$/;"	m
-p5.Delay.setType	pages/libraries/p5.sound.js	/^  p5.Delay.prototype.setType = function (t) {$/;"	m
-p5.Delay.amp	pages/libraries/p5.sound.js	/^  p5.Delay.prototype.amp = function (vol, rampTime, tFromNow) {$/;"	m
-p5.Delay.connect	pages/libraries/p5.sound.js	/^  p5.Delay.prototype.connect = function (unit) {$/;"	m
-p5.Delay.disconnect	pages/libraries/p5.sound.js	/^  p5.Delay.prototype.disconnect = function () {$/;"	m
-delay	pages/libraries/p5.sound.js	/^var delay;$/;"	f
-reverb	pages/libraries/p5.sound.js	/^var reverb;$/;"	v
+p5.LowPass	pages/libraries/p5.sound.js	/^  };$/;"	c
+p5.LowPass	pages/libraries/p5.sound.js	/^  };$/;"	f
+p5.MediaElement	pages/libraries/p5.dom.js	/^  };$/;"	c
+p5.MediaElement._onTimeUpdate	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype._onTimeUpdate = function() {$/;"	m
+p5.MediaElement.addCue	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.addCue = function(time, callback, val) {$/;"	m
+p5.MediaElement.autoplay	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.autoplay = function(val) {$/;"	m
+p5.MediaElement.connect	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.connect = function(obj) {$/;"	m
+p5.MediaElement.duration	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.duration = function() {$/;"	m
+p5.MediaElement.get	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.get = function(x, y, w, h){$/;"	m
+p5.MediaElement.hideControls	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.hideControls = function() {$/;"	m
+p5.MediaElement.loadPixels	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.loadPixels = function() {$/;"	m
+p5.MediaElement.loop	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.loop = function() {$/;"	m
+p5.MediaElement.noLoop	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.noLoop = function() {$/;"	m
+p5.MediaElement.p5	pages/libraries/p5.dom.js	/^      this.drawingContext.drawImage(this.elt, 0, 0, this.width, this.height);$/;"	c
+p5.MediaElement.p5.Renderer2D	pages/libraries/p5.dom.js	/^    if (this.loadedmetadata) { \/\/ wait for metadata$/;"	c
+p5.MediaElement.pause	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.pause = function() {$/;"	m
+p5.MediaElement.pixels	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.pixels = [];$/;"	m
+p5.MediaElement.play	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.play = function() {$/;"	m
+p5.MediaElement.removeCue	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.removeCue = function(id) {$/;"	m
+p5.MediaElement.return.Renderer2D	pages/libraries/p5.dom.js	/^    if (this.loadedmetadata) { \/\/ wait for metadata$/;"	c
+p5.MediaElement.set	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.set = function(x, y, imgOrCol){$/;"	m
+p5.MediaElement.showControls	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.showControls = function() {$/;"	m
+p5.MediaElement.stop	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.stop = function() {$/;"	m
+p5.MediaElement.time	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.time = function(val) {$/;"	m
+p5.MediaElement.updatePixels	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.updatePixels =  function(x, y, w, h){$/;"	m
+p5.MediaElement.volume	pages/libraries/p5.dom.js	/^  p5.MediaElement.prototype.volume = function(val) {$/;"	m
+p5.Metro	pages/libraries/p5.sound.js	/^  var ac = p5sound.audiocontext;$/;"	c
+p5.Metro._init	pages/libraries/p5.sound.js	/^  p5.Metro.prototype._init = function () {$/;"	m
+p5.Metro.beatLength	pages/libraries/p5.sound.js	/^  p5.Metro.prototype.beatLength = function (tatums) {$/;"	m
+p5.Metro.getBPM	pages/libraries/p5.sound.js	/^  p5.Metro.prototype.getBPM = function (tempo) {$/;"	m
+p5.Metro.ontick	pages/libraries/p5.sound.js	/^  p5.Metro.prototype.ontick = function (tickTime) {$/;"	m
+p5.Metro.pushSync	pages/libraries/p5.sound.js	/^  p5.Metro.prototype.pushSync = function (part) {$/;"	m
+p5.Metro.resetSync	pages/libraries/p5.sound.js	/^  p5.Metro.prototype.resetSync = function (part) {$/;"	m
+p5.Metro.setBPM	pages/libraries/p5.sound.js	/^  p5.Metro.prototype.setBPM = function (bpm, rampTime) {$/;"	m
+p5.Metro.start	pages/libraries/p5.sound.js	/^  p5.Metro.prototype.start = function (time) {$/;"	m
+p5.Metro.stop	pages/libraries/p5.sound.js	/^  p5.Metro.prototype.stop = function (time) {$/;"	m
+p5.Metro.tickCallback	pages/libraries/p5.sound.js	/^    this.tickCallback = function () {$/;"	m
+p5.Noise	pages/libraries/p5.sound.js	/^  var p5sound = master;$/;"	c
+p5.Noise.dispose	pages/libraries/p5.sound.js	/^  p5.Noise.prototype.dispose = function () {$/;"	m
+p5.Noise.getType	pages/libraries/p5.sound.js	/^  p5.Noise.prototype.getType = function () {$/;"	m
+p5.Noise.setType	pages/libraries/p5.sound.js	/^  p5.Noise.prototype.setType = function (type) {$/;"	m
+p5.Noise.start	pages/libraries/p5.sound.js	/^  p5.Noise.prototype.start = function () {$/;"	m
+p5.Noise.stop	pages/libraries/p5.sound.js	/^  p5.Noise.prototype.stop = function () {$/;"	m
+p5.Oscillator	pages/libraries/p5.sound.js	/^  var Scale = Tone_signal_Scale;$/;"	c
+p5.Oscillator.add	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.add = function (num) {$/;"	m
+p5.Oscillator.amp	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.amp = function (vol, rampTime, tFromNow) {$/;"	m
+p5.Oscillator.connect	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.connect = function (unit) {$/;"	m
+p5.Oscillator.disconnect	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.disconnect = function (unit) {$/;"	m
+p5.Oscillator.dispose	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.dispose = function () {$/;"	m
+p5.Oscillator.fade	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.fade = p5.Oscillator.prototype.amp;$/;"	m
+p5.Oscillator.freq	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.freq = function (val, rampTime, tFromNow) {$/;"	m
+p5.Oscillator.getAmp	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.getAmp = function () {$/;"	m
+p5.Oscillator.getFreq	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.getFreq = function () {$/;"	m
+p5.Oscillator.getPan	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.getPan = function () {$/;"	m
+p5.Oscillator.getType	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.getType = function () {$/;"	m
+p5.Oscillator.mult	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.mult = function (num) {$/;"	m
+p5.Oscillator.pan	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.pan = function (pval, tFromNow) {$/;"	m
+p5.Oscillator.phase	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.phase = function (p) {$/;"	m
+p5.Oscillator.scale	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.scale = function (inMin, inMax, outMin, outMax) {$/;"	m
+p5.Oscillator.setType	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.setType = function (type) {$/;"	m
+p5.Oscillator.start	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.start = function (time, f) {$/;"	m
+p5.Oscillator.stop	pages/libraries/p5.sound.js	/^  p5.Oscillator.prototype.stop = function (time) {$/;"	m
+p5.Panner	pages/libraries/p5.sound.js	/^  if (typeof ac.createStereoPanner !== 'undefined') {$/;"	c
+p5.Panner.connect	pages/libraries/p5.sound.js	/^    p5.Panner.prototype.connect = function (obj) {$/;"	m
+p5.Panner.disconnect	pages/libraries/p5.sound.js	/^    p5.Panner.prototype.disconnect = function (obj) {$/;"	m
+p5.Panner.inputChannels	pages/libraries/p5.sound.js	/^    p5.Panner.prototype.inputChannels = function (numChannels) {$/;"	m
+p5.Panner.pan	pages/libraries/p5.sound.js	/^    p5.Panner.prototype.pan = function (val, tFromNow) {$/;"	m
+p5.Panner3D	pages/libraries/p5.sound.js	/^  }$/;"	f
+p5.Part	pages/libraries/p5.sound.js	/^  };$/;"	c
+p5.Part.addPhrase	pages/libraries/p5.sound.js	/^  p5.Part.prototype.addPhrase = function (name, callback, array) {$/;"	m
+p5.Part.getBPM	pages/libraries/p5.sound.js	/^  p5.Part.prototype.getBPM = function () {$/;"	m
+p5.Part.getPhrase	pages/libraries/p5.sound.js	/^  p5.Part.prototype.getPhrase = function (name) {$/;"	m
+p5.Part.incrementStep	pages/libraries/p5.sound.js	/^  p5.Part.prototype.incrementStep = function (time) {$/;"	m
+p5.Part.loop	pages/libraries/p5.sound.js	/^  p5.Part.prototype.loop = function (time) {$/;"	m
+p5.Part.noLoop	pages/libraries/p5.sound.js	/^  p5.Part.prototype.noLoop = function () {$/;"	m
+p5.Part.onStep	pages/libraries/p5.sound.js	/^  p5.Part.prototype.onStep = function (callback) {$/;"	m
+p5.Part.onended	pages/libraries/p5.sound.js	/^    this.onended = function () {$/;"	m
+p5.Part.pause	pages/libraries/p5.sound.js	/^  p5.Part.prototype.pause = function (time) {$/;"	m
+p5.Part.removePhrase	pages/libraries/p5.sound.js	/^  p5.Part.prototype.removePhrase = function (name) {$/;"	m
+p5.Part.replaceSequence	pages/libraries/p5.sound.js	/^  p5.Part.prototype.replaceSequence = function (name, array) {$/;"	m
+p5.Part.setBPM	pages/libraries/p5.sound.js	/^  p5.Part.prototype.setBPM = function (tempo, rampTime) {$/;"	m
+p5.Part.start	pages/libraries/p5.sound.js	/^  p5.Part.prototype.start = function (time) {$/;"	m
+p5.Part.stop	pages/libraries/p5.sound.js	/^  p5.Part.prototype.stop = function (time) {$/;"	m
+p5.Part.this.onended	pages/libraries/p5.sound.js	/^    this.onended = function () {$/;"	m
+p5.PeakDetect	pages/libraries/p5.sound.js	/^  var p5sound = master;$/;"	c
+p5.PeakDetect._onPeak	pages/libraries/p5.sound.js	/^    this._onPeak = function () {$/;"	m
+p5.PeakDetect.onPeak	pages/libraries/p5.sound.js	/^  p5.PeakDetect.prototype.onPeak = function (callback, val) {$/;"	m
+p5.PeakDetect.self._onPeak	pages/libraries/p5.sound.js	/^    var self = this;$/;"	f
+p5.PeakDetect.update	pages/libraries/p5.sound.js	/^  p5.PeakDetect.prototype.update = function (fftObject) {$/;"	m
+p5.Phrase	pages/libraries/p5.sound.js	/^  };$/;"	c
+p5.Pulse	pages/libraries/p5.sound.js	/^  var p5sound = master;$/;"	c
+p5.Pulse.freq	pages/libraries/p5.sound.js	/^  p5.Pulse.prototype.freq = function (val, rampTime, tFromNow) {$/;"	m
+p5.Pulse.start	pages/libraries/p5.sound.js	/^  p5.Pulse.prototype.start = function (f, time) {$/;"	m
+p5.Pulse.stop	pages/libraries/p5.sound.js	/^  p5.Pulse.prototype.stop = function (time) {$/;"	m
+p5.Pulse.width	pages/libraries/p5.sound.js	/^  p5.Pulse.prototype.width = function (w) {$/;"	m
 p5.Reverb	pages/libraries/p5.sound.js	/^  var p5sound = master;$/;"	c
-p5.Reverb.process	pages/libraries/p5.sound.js	/^  p5.Reverb.prototype.process = function (src, seconds, decayRate, reverse) {$/;"	m
-p5.Reverb.set	pages/libraries/p5.sound.js	/^  p5.Reverb.prototype.set = function (seconds, decayRate, reverse) {$/;"	m
+p5.Reverb._buildImpulse	pages/libraries/p5.sound.js	/^  p5.Reverb.prototype._buildImpulse = function () {$/;"	m
 p5.Reverb.amp	pages/libraries/p5.sound.js	/^  p5.Reverb.prototype.amp = function (vol, rampTime, tFromNow) {$/;"	m
 p5.Reverb.connect	pages/libraries/p5.sound.js	/^  p5.Reverb.prototype.connect = function (unit) {$/;"	m
 p5.Reverb.disconnect	pages/libraries/p5.sound.js	/^  p5.Reverb.prototype.disconnect = function () {$/;"	m
-p5.Reverb._buildImpulse	pages/libraries/p5.sound.js	/^  p5.Reverb.prototype._buildImpulse = function () {$/;"	m
 p5.Reverb.dispose	pages/libraries/p5.sound.js	/^  p5.Reverb.prototype.dispose = function () {$/;"	m
-p5.Convolver	pages/libraries/p5.sound.js	/^  };$/;"	c
-p5.registerPreloadMethod	pages/libraries/p5.sound.js	/^  p5.prototype.registerPreloadMethod('createConvolver');$/;"	m
-p5.createConvolver	pages/libraries/p5.sound.js	/^  p5.prototype.createConvolver = function (path, callback) {$/;"	m
-p5.Convolver._loadBuffer	pages/libraries/p5.sound.js	/^  p5.Convolver.prototype._loadBuffer = function (path, callback) {$/;"	m
-p5.Convolver.set	pages/libraries/p5.sound.js	/^  p5.Convolver.prototype.set = null;$/;"	m
-p5.Convolver.process	pages/libraries/p5.sound.js	/^  p5.Convolver.prototype.process = function (src) {$/;"	m
-p5.Convolver.impulses	pages/libraries/p5.sound.js	/^  p5.Convolver.prototype.impulses = [];$/;"	m
-p5.Convolver.addImpulse	pages/libraries/p5.sound.js	/^  p5.Convolver.prototype.addImpulse = function (path, callback) {$/;"	m
-p5.Convolver.resetImpulse	pages/libraries/p5.sound.js	/^  p5.Convolver.prototype.resetImpulse = function (path, callback) {$/;"	m
-p5.Convolver.toggleImpulse	pages/libraries/p5.sound.js	/^  p5.Convolver.prototype.toggleImpulse = function (id) {$/;"	m
-p5.Convolver.dispose	pages/libraries/p5.sound.js	/^  p5.Convolver.prototype.dispose = function () {$/;"	m
-reverb	pages/libraries/p5.sound.js	/^var reverb;$/;"	f
-Tone_core_Clock	pages/libraries/p5.sound.js	/^var Tone_core_Clock;$/;"	v
-Tone.Clock	pages/libraries/p5.sound.js	/^  'use strict';$/;"	c
-Tone.Clock.setRate	pages/libraries/p5.sound.js	/^  Tone.Clock.prototype.setRate = function (rate, rampTime) {$/;"	m
-Tone.Clock.getRate	pages/libraries/p5.sound.js	/^  Tone.Clock.prototype.getRate = function () {$/;"	m
-Tone.Clock.start	pages/libraries/p5.sound.js	/^  Tone.Clock.prototype.start = function (time) {$/;"	m
-Tone.Clock.this._oscillator	pages/libraries/p5.sound.js	/^    this._oscillator.onended = function () {$/;"	m
-Tone.Clock.stop	pages/libraries/p5.sound.js	/^  Tone.Clock.prototype.stop = function (time, onend) {$/;"	m
-Tone.Clock._processBuffer	pages/libraries/p5.sound.js	/^  Tone.Clock.prototype._processBuffer = function (event) {$/;"	m
-Tone.Clock.dispose	pages/libraries/p5.sound.js	/^  Tone.Clock.prototype.dispose = function () {$/;"	m
-Tone.Clock.this._jsNode	pages/libraries/p5.sound.js	/^    this._jsNode.onaudioprocess = function () {$/;"	m
-Tone_core_Clock	pages/libraries/p5.sound.js	/^var Tone_core_Clock;$/;"	f
-metro	pages/libraries/p5.sound.js	/^var metro;$/;"	v
-p5.Metro.tickCallback	pages/libraries/p5.sound.js	/^    this.tickCallback = function () {$/;"	m
-p5.Metro	pages/libraries/p5.sound.js	/^  var ac = p5sound.audiocontext;$/;"	c
-p5.Metro.ontick	pages/libraries/p5.sound.js	/^  p5.Metro.prototype.ontick = function (tickTime) {$/;"	m
-p5.Metro.setBPM	pages/libraries/p5.sound.js	/^  p5.Metro.prototype.setBPM = function (bpm, rampTime) {$/;"	m
-p5.Metro.getBPM	pages/libraries/p5.sound.js	/^  p5.Metro.prototype.getBPM = function (tempo) {$/;"	m
-p5.Metro._init	pages/libraries/p5.sound.js	/^  p5.Metro.prototype._init = function () {$/;"	m
-p5.Metro.resetSync	pages/libraries/p5.sound.js	/^  p5.Metro.prototype.resetSync = function (part) {$/;"	m
-p5.Metro.pushSync	pages/libraries/p5.sound.js	/^  p5.Metro.prototype.pushSync = function (part) {$/;"	m
-p5.Metro.start	pages/libraries/p5.sound.js	/^  p5.Metro.prototype.start = function (time) {$/;"	m
-p5.Metro.stop	pages/libraries/p5.sound.js	/^  p5.Metro.prototype.stop = function (time) {$/;"	m
-p5.Metro.beatLength	pages/libraries/p5.sound.js	/^  p5.Metro.prototype.beatLength = function (tatums) {$/;"	m
-metro	pages/libraries/p5.sound.js	/^var metro;$/;"	f
-looper	pages/libraries/p5.sound.js	/^var looper;$/;"	v
-p5.setBPM	pages/libraries/p5.sound.js	/^  p5.prototype.setBPM = function (BPM, rampTime) {$/;"	m
-p5.Phrase	pages/libraries/p5.sound.js	/^  };$/;"	c
-p5.Part.onended	pages/libraries/p5.sound.js	/^    this.onended = function () {$/;"	m
-p5sound.p5.Part.callback	pages/libraries/p5.sound.js	/^    this.callback = function () {$/;"	m
-p5.Part	pages/libraries/p5.sound.js	/^  };$/;"	c
-p5.Part.setBPM	pages/libraries/p5.sound.js	/^  p5.Part.prototype.setBPM = function (tempo, rampTime) {$/;"	m
-p5.Part.getBPM	pages/libraries/p5.sound.js	/^  p5.Part.prototype.getBPM = function () {$/;"	m
-p5.Part.start	pages/libraries/p5.sound.js	/^  p5.Part.prototype.start = function (time) {$/;"	m
-p5.Part.loop	pages/libraries/p5.sound.js	/^  p5.Part.prototype.loop = function (time) {$/;"	m
-p5.Part.this.onended	pages/libraries/p5.sound.js	/^    this.onended = function () {$/;"	m
-p5.Part.noLoop	pages/libraries/p5.sound.js	/^  p5.Part.prototype.noLoop = function () {$/;"	m
-p5.Part.this.onended	pages/libraries/p5.sound.js	/^    this.onended = function () {$/;"	m
-p5.Part.stop	pages/libraries/p5.sound.js	/^  p5.Part.prototype.stop = function (time) {$/;"	m
-p5.Part.pause	pages/libraries/p5.sound.js	/^  p5.Part.prototype.pause = function (time) {$/;"	m
-p5.Part.addPhrase	pages/libraries/p5.sound.js	/^  p5.Part.prototype.addPhrase = function (name, callback, array) {$/;"	m
-p5.Part.removePhrase	pages/libraries/p5.sound.js	/^  p5.Part.prototype.removePhrase = function (name) {$/;"	m
-p5.Part.getPhrase	pages/libraries/p5.sound.js	/^  p5.Part.prototype.getPhrase = function (name) {$/;"	m
-p5.Part.replaceSequence	pages/libraries/p5.sound.js	/^  p5.Part.prototype.replaceSequence = function (name, array) {$/;"	m
-p5.Part.incrementStep	pages/libraries/p5.sound.js	/^  p5.Part.prototype.incrementStep = function (time) {$/;"	m
-p5.Part.onStep	pages/libraries/p5.sound.js	/^  p5.Part.prototype.onStep = function (callback) {$/;"	m
-this.parts	pages/libraries/p5.sound.js	/^      this.parts[i].onended = function () {$/;"	m
+p5.Reverb.process	pages/libraries/p5.sound.js	/^  p5.Reverb.prototype.process = function (src, seconds, decayRate, reverse) {$/;"	m
+p5.Reverb.set	pages/libraries/p5.sound.js	/^  p5.Reverb.prototype.set = function (seconds, decayRate, reverse) {$/;"	m
+p5.SawOsc	pages/libraries/p5.sound.js	/^  p5.TriOsc.prototype = Object.create(p5.Oscillator.prototype);$/;"	f
+p5.SawOsc	pages/libraries/p5.sound.js	/^  };$/;"	c
 p5.Score	pages/libraries/p5.sound.js	/^  };$/;"	c
-p5.Score.onended	pages/libraries/p5.sound.js	/^  p5.Score.prototype.onended = function () {$/;"	m
-p5.Score.this.parts	pages/libraries/p5.sound.js	/^      this.parts[this.parts.length - 1].onended = function () {$/;"	m
-p5.Score.start	pages/libraries/p5.sound.js	/^  p5.Score.prototype.start = function () {$/;"	m
-p5.Score.stop	pages/libraries/p5.sound.js	/^  p5.Score.prototype.stop = function () {$/;"	m
-p5.Score.pause	pages/libraries/p5.sound.js	/^  p5.Score.prototype.pause = function () {$/;"	m
 p5.Score.loop	pages/libraries/p5.sound.js	/^  p5.Score.prototype.loop = function () {$/;"	m
 p5.Score.noLoop	pages/libraries/p5.sound.js	/^  p5.Score.prototype.noLoop = function () {$/;"	m
-p5.Score.resetParts	pages/libraries/p5.sound.js	/^  p5.Score.prototype.resetParts = function () {$/;"	m
+p5.Score.onended	pages/libraries/p5.sound.js	/^  p5.Score.prototype.onended = function () {$/;"	m
+p5.Score.pause	pages/libraries/p5.sound.js	/^  p5.Score.prototype.pause = function () {$/;"	m
 p5.Score.resetPart	pages/libraries/p5.sound.js	/^  p5.Score.prototype.resetPart = function (i) {$/;"	m
+p5.Score.resetParts	pages/libraries/p5.sound.js	/^  p5.Score.prototype.resetParts = function () {$/;"	m
 p5.Score.setBPM	pages/libraries/p5.sound.js	/^  p5.Score.prototype.setBPM = function (bpm, rampTime) {$/;"	m
-looper.playNextPart	pages/libraries/p5.sound.js	/^  function playNextPart(aScore) {$/;"	f
-looper	pages/libraries/p5.sound.js	/^var looper;$/;"	f
-soundRecorder	pages/libraries/p5.sound.js	/^var soundRecorder;$/;"	v
-p5.SoundRecorder._callback	pages/libraries/p5.sound.js	/^    this._callback = function () {$/;"	m
+p5.Score.start	pages/libraries/p5.sound.js	/^  p5.Score.prototype.start = function () {$/;"	m
+p5.Score.stop	pages/libraries/p5.sound.js	/^  p5.Score.prototype.stop = function () {$/;"	m
+p5.Score.this.parts	pages/libraries/p5.sound.js	/^      this.parts[this.parts.length - 1].onended = function () {$/;"	m
+p5.Signal	pages/libraries/p5.sound.js	/^  Tone.setContext(p5sound.audiocontext);$/;"	f
+p5.SinOsc	pages/libraries/p5.sound.js	/^  };$/;"	c
+p5.SinOsc	pages/libraries/p5.sound.js	/^  };$/;"	f
+p5.SoundFile	pages/libraries/p5.sound.js	/^  var ac = p5sound.audiocontext;$/;"	c
+p5.SoundFile.Array	pages/libraries/p5.sound.js	/^      for (var i = 0; i < this.buffer.numberOfChannels; i++) {$/;"	c
+p5.SoundFile._initCounterNode	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype._initCounterNode = function () {$/;"	m
+p5.SoundFile._initSourceNode	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype._initSourceNode = function () {$/;"	m
+p5.SoundFile._onEnded	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype._onEnded = function (s) {$/;"	m
+p5.SoundFile._onTimeUpdate	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype._onTimeUpdate = function (position) {$/;"	m
+p5.SoundFile._updateProgress	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype._updateProgress = function (evt) {$/;"	m
+p5.SoundFile.add	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.add = function () {$/;"	m
+p5.SoundFile.addCue	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.addCue = function (time, callback, val) {$/;"	m
+p5.SoundFile.amp	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.amp = p5.SoundFile.prototype.setVolume;$/;"	m
+p5.SoundFile.channels	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.channels = function () {$/;"	m
+p5.SoundFile.clearCues	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.clearCues = function () {$/;"	m
+p5.SoundFile.connect	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.connect = function (unit) {$/;"	m
+p5.SoundFile.currentTime	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.currentTime = function () {$/;"	m
+p5.SoundFile.disconnect	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.disconnect = function (unit) {$/;"	m
+p5.SoundFile.dispose	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.dispose = function () {$/;"	m
+p5.SoundFile.duration	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.duration = function () {$/;"	m
+p5.SoundFile.fade	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.fade = p5.SoundFile.prototype.setVolume;$/;"	m
+p5.SoundFile.frames	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.frames = function () {$/;"	m
+p5.SoundFile.getLevel	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.getLevel = function (smoothing) {$/;"	m
+p5.SoundFile.getPan	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.getPan = function () {$/;"	m
+p5.SoundFile.getPeaks	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.getPeaks = function (length) {$/;"	m
+p5.SoundFile.getPlaybackRate	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.getPlaybackRate = function () {$/;"	m
+p5.SoundFile.getVolume	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.getVolume = function () {$/;"	m
+p5.SoundFile.isLoaded	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.isLoaded = function () {$/;"	m
+p5.SoundFile.isLooping	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.isLooping = function () {$/;"	m
+p5.SoundFile.isPaused	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.isPaused = function () {$/;"	m
+p5.SoundFile.isPlaying	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.isPlaying = function () {$/;"	m
+p5.SoundFile.jump	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.jump = function (cueTime, duration) {$/;"	m
+p5.SoundFile.load	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.load = function (callback) {$/;"	m
+p5.SoundFile.loop	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.loop = function (startTime, rate, amp, loopStart, duration) {$/;"	m
+p5.SoundFile.pan	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.pan = function (pval, tFromNow) {$/;"	m
+p5.SoundFile.pause	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.pause = function (time) {$/;"	m
+p5.SoundFile.play	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.play = function (time, rate, amp, _cueStart, duration) {$/;"	m
+p5.SoundFile.playMode	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.playMode = function (str) {$/;"	m
+p5.SoundFile.processPeaks	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.processPeaks = function (callback, _initThreshold, _minThreshold, _minPeaks) {$/;"	m
+p5.SoundFile.rate	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.rate = function (playbackRate) {$/;"	m
+p5.SoundFile.removeCue	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.removeCue = function (id) {$/;"	m
+p5.SoundFile.reverseBuffer	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.reverseBuffer = function () {$/;"	m
+p5.SoundFile.s.onended	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype._onEnded = function (s) {$/;"	f
+p5.SoundFile.sampleRate	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.sampleRate = function () {$/;"	m
+p5.SoundFile.setBuffer	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.setBuffer = function (buf) {$/;"	m
+p5.SoundFile.setLoop	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.setLoop = function (bool) {$/;"	m
+p5.SoundFile.setPath	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.setPath = function (p, callback) {$/;"	m
+p5.SoundFile.setPitch	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.setPitch = function (num) {$/;"	m
+p5.SoundFile.setVolume	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.setVolume = function (vol, rampTime, tFromNow) {$/;"	m
+p5.SoundFile.stop	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.stop = function (timeFromNow) {$/;"	m
+p5.SoundFile.stopAll	pages/libraries/p5.sound.js	/^  p5.SoundFile.prototype.stopAll = function (_time) {$/;"	m
 p5.SoundRecorder	pages/libraries/p5.sound.js	/^  var ac = p5sound.audiocontext;$/;"	c
-p5.SoundRecorder.setInput	pages/libraries/p5.sound.js	/^  p5.SoundRecorder.prototype.setInput = function (unit) {$/;"	m
-p5.SoundRecorder.record	pages/libraries/p5.sound.js	/^  p5.SoundRecorder.prototype.record = function (sFile, duration, callback) {$/;"	m
-p5.SoundRecorder.this._callback	pages/libraries/p5.sound.js	/^      this._callback = function () {$/;"	m
-this._callback	pages/libraries/p5.sound.js	/^      this._callback = function () {$/;"	m
-p5.SoundRecorder.stop	pages/libraries/p5.sound.js	/^  p5.SoundRecorder.prototype.stop = function () {$/;"	m
-p5.SoundRecorder._clear	pages/libraries/p5.sound.js	/^  p5.SoundRecorder.prototype._clear = function () {$/;"	m
 p5.SoundRecorder._audioprocess	pages/libraries/p5.sound.js	/^  p5.SoundRecorder.prototype._audioprocess = function (event) {$/;"	m
+p5.SoundRecorder._callback	pages/libraries/p5.sound.js	/^    this._callback = function () {$/;"	m
+p5.SoundRecorder._clear	pages/libraries/p5.sound.js	/^  p5.SoundRecorder.prototype._clear = function () {$/;"	m
 p5.SoundRecorder._getBuffer	pages/libraries/p5.sound.js	/^  p5.SoundRecorder.prototype._getBuffer = function () {$/;"	m
 p5.SoundRecorder._mergeBuffers	pages/libraries/p5.sound.js	/^  p5.SoundRecorder.prototype._mergeBuffers = function (channelBuffer) {$/;"	m
 p5.SoundRecorder.dispose	pages/libraries/p5.sound.js	/^  p5.SoundRecorder.prototype.dispose = function () {$/;"	m
+p5.SoundRecorder.record	pages/libraries/p5.sound.js	/^  p5.SoundRecorder.prototype.record = function (sFile, duration, callback) {$/;"	m
+p5.SoundRecorder.setInput	pages/libraries/p5.sound.js	/^  p5.SoundRecorder.prototype.setInput = function (unit) {$/;"	m
+p5.SoundRecorder.stop	pages/libraries/p5.sound.js	/^  p5.SoundRecorder.prototype.stop = function () {$/;"	m
+p5.SoundRecorder.this._callback	pages/libraries/p5.sound.js	/^      this._callback = function () {$/;"	m
 p5.SoundRecorder.this._callback	pages/libraries/p5.sound.js	/^    this._callback = function () {$/;"	m
+p5.SqrOsc	pages/libraries/p5.sound.js	/^  p5.SawOsc.prototype = Object.create(p5.Oscillator.prototype);$/;"	f
+p5.SqrOsc	pages/libraries/p5.sound.js	/^  };$/;"	c
+p5.TriOsc	pages/libraries/p5.sound.js	/^  p5.SinOsc.prototype = Object.create(p5.Oscillator.prototype);$/;"	f
+p5.TriOsc	pages/libraries/p5.sound.js	/^  };$/;"	c
+p5.VIDEO	pages/libraries/p5.dom.js	/^  p5.prototype.VIDEO = 'video';$/;"	m
+p5._checkFileFormats	pages/libraries/p5.sound.js	/^  p5.prototype._checkFileFormats = function (paths) {$/;"	m
+p5._mathChain	pages/libraries/p5.sound.js	/^  p5.prototype._mathChain = function (o, math, thisChain, nextChain, type) {$/;"	m
+p5.createA	pages/libraries/p5.dom.js	/^  p5.prototype.createA = function(href, html, target) {$/;"	m
+p5.createAudio	pages/libraries/p5.dom.js	/^  p5.prototype.createAudio = function(src, callback) {$/;"	m
+p5.createButton	pages/libraries/p5.dom.js	/^  p5.prototype.createButton = function(label, value) {$/;"	m
+p5.createCapture	pages/libraries/p5.dom.js	/^  p5.prototype.createCapture = function() {$/;"	m
+p5.createCheckbox	pages/libraries/p5.dom.js	/^  p5.prototype.createCheckbox = function() {$/;"	m
+p5.createConvolver	pages/libraries/p5.sound.js	/^  p5.prototype.createConvolver = function (path, callback) {$/;"	m
+p5.createElement	pages/libraries/p5.dom.js	/^  p5.prototype.createElement = function(tag, content) {$/;"	m
+p5.createFileInput	pages/libraries/p5.dom.js	/^  p5.prototype.createFileInput = function(callback, multiple) {$/;"	m
+p5.createImg	pages/libraries/p5.dom.js	/^  p5.prototype.createImg = function() {$/;"	m
+p5.createInput	pages/libraries/p5.dom.js	/^  p5.prototype.createInput = function(value) {$/;"	m
+p5.createSelect	pages/libraries/p5.dom.js	/^  p5.prototype.createSelect = function(mult) {$/;"	m
+p5.createSlider	pages/libraries/p5.dom.js	/^  p5.prototype.createSlider = function(min, max, value, step) {$/;"	m
+p5.createVideo	pages/libraries/p5.dom.js	/^  p5.prototype.createVideo = function(src, callback) {$/;"	m
+p5.disposeSound	pages/libraries/p5.sound.js	/^  p5.prototype.disposeSound = function () {$/;"	m
+p5.freqToMidi	pages/libraries/p5.sound.js	/^  p5.prototype.freqToMidi = function (f) {$/;"	m
+p5.getAudioContext	pages/libraries/p5.sound.js	/^  p5.prototype.getAudioContext = function () {$/;"	m
+p5.getMasterVolume	pages/libraries/p5.sound.js	/^  p5.prototype.getMasterVolume = function () {$/;"	m
+p5.isFileSupported	pages/libraries/p5.sound.js	/^  p5.prototype.isFileSupported = function (extension) {$/;"	m
+p5.isSupported	pages/libraries/p5.sound.js	/^  p5.prototype.isSupported = function () {$/;"	m
+p5.loadSound	pages/libraries/p5.sound.js	/^  p5.prototype.loadSound = function (path, callback, whileLoading) {$/;"	m
+p5.masterVolume	pages/libraries/p5.sound.js	/^  p5.prototype.masterVolume = function (vol, rampTime, tFromNow) {$/;"	m
+p5.midiToFreq	pages/libraries/p5.sound.js	/^  p5.prototype.midiToFreq = function (m) {$/;"	m
+p5.registerMethod	pages/libraries/p5.sound.js	/^  p5.prototype.registerMethod('remove', p5.prototype.disposeSound);$/;"	m
+p5.registerPreloadMethod	pages/libraries/p5.sound.js	/^  p5.prototype.registerPreloadMethod('createConvolver');$/;"	m
+p5.registerPreloadMethod	pages/libraries/p5.sound.js	/^  p5.prototype.registerPreloadMethod('loadSound', p5);$/;"	m
+p5.removeElements	pages/libraries/p5.dom.js	/^  p5.prototype.removeElements = function (e) {$/;"	m
+p5.sampleRate	pages/libraries/p5.sound.js	/^  p5.prototype.sampleRate = function () {$/;"	m
 p5.saveSound	pages/libraries/p5.sound.js	/^  p5.prototype.saveSound = function (soundFile, name) {$/;"	m
+p5.selectAll	pages/libraries/p5.dom.js	/^  p5.prototype.selectAll = function (e) {$/;"	m
+p5.setBPM	pages/libraries/p5.sound.js	/^  p5.prototype.setBPM = function (BPM, rampTime) {$/;"	m
+p5.soundFormats	pages/libraries/p5.sound.js	/^  p5.prototype.soundFormats = function () {$/;"	m
+p5.var.setAttrs	pages/libraries/p5.dom.js	/^    var setAttrs = function(){$/;"	f
+p5sound.p5.Part.callback	pages/libraries/p5.sound.js	/^    this.callback = function () {$/;"	m
+p5sound.this.whileLoading	pages/libraries/p5.sound.js	/^      this.whileLoading = function () {$/;"	m
+panner	pages/libraries/p5.sound.js	/^var panner;$/;"	f
+panner	pages/libraries/p5.sound.js	/^var panner;$/;"	v
+panner3D.pan	pages/libraries/p5.sound.js	/^    panner3D.connect(output);$/;"	f
+peakdetect	pages/libraries/p5.sound.js	/^var peakdetect;$/;"	f
+peakdetect	pages/libraries/p5.sound.js	/^var peakdetect;$/;"	v
+pulse	pages/libraries/p5.sound.js	/^var pulse;$/;"	f
+pulse	pages/libraries/p5.sound.js	/^var pulse;$/;"	v
+pulse.createDCOffset	pages/libraries/p5.sound.js	/^  function createDCOffset() {$/;"	f
+reader.onload	pages/libraries/p5.sound.js	/^      var self = this;$/;"	f
+repository	package.json	/^  "repository": {$/;"	f
+request.onload	pages/libraries/p5.sound.js	/^      var self = this;$/;"	f
+reverb	pages/libraries/p5.sound.js	/^var reverb;$/;"	f
+reverb	pages/libraries/p5.sound.js	/^var reverb;$/;"	v
+scripts	package.json	/^  "scripts": {$/;"	f
+select	pages/libraries/p5.dom.js	/^  p5.prototype.select = function (e) {$/;"	m
+self._scopeNode.onaudioprocess	pages/libraries/p5.sound.js	/^    self._scopeNode.connect(p5.soundOut._silentNode);$/;"	f
+self.checked	pages/libraries/p5.dom.js	/^    var self = addElement(elt, this);$/;"	f
+self.option	pages/libraries/p5.dom.js	/^    var self = addElement(elt, this);$/;"	f
+self.selected	pages/libraries/p5.dom.js	/^    };$/;"	f
+setup	pages/js/sketch.js	/^function setup() {$/;"	f
+setup	pages/js/sketch2.js	/^function setup() {$/;"	f
+signal	pages/libraries/p5.sound.js	/^var signal;$/;"	f
+signal	pages/libraries/p5.sound.js	/^var signal;$/;"	v
+sndcore	pages/libraries/p5.sound.js	/^var sndcore;$/;"	f
+sndcore.isAACSupported	pages/libraries/p5.sound.js	/^  var isAACSupported = function () {$/;"	f
+sndcore.isAIFSupported	pages/libraries/p5.sound.js	/^  var isAIFSupported = function () {$/;"	f
+sndcore.isMP3Supported	pages/libraries/p5.sound.js	/^  var isMP3Supported = function () {$/;"	f
+sndcore.isOGGSupported	pages/libraries/p5.sound.js	/^  var isOGGSupported = function () {$/;"	f
+sndcore.isWAVSupported	pages/libraries/p5.sound.js	/^  var isWAVSupported = function () {$/;"	f
+soundRecorder	pages/libraries/p5.sound.js	/^var soundRecorder;$/;"	f
+soundRecorder	pages/libraries/p5.sound.js	/^var soundRecorder;$/;"	v
 soundRecorder.interleave	pages/libraries/p5.sound.js	/^  function interleave(leftChannel, rightChannel) {$/;"	f
 soundRecorder.writeUTFBytes	pages/libraries/p5.sound.js	/^  function writeUTFBytes(view, offset, string) {$/;"	f
-soundRecorder	pages/libraries/p5.sound.js	/^var soundRecorder;$/;"	f
-peakdetect	pages/libraries/p5.sound.js	/^var peakdetect;$/;"	v
-p5.PeakDetect._onPeak	pages/libraries/p5.sound.js	/^    this._onPeak = function () {$/;"	m
-p5.PeakDetect	pages/libraries/p5.sound.js	/^  var p5sound = master;$/;"	c
-p5.PeakDetect.update	pages/libraries/p5.sound.js	/^  p5.PeakDetect.prototype.update = function (fftObject) {$/;"	m
-p5.PeakDetect.onPeak	pages/libraries/p5.sound.js	/^  p5.PeakDetect.prototype.onPeak = function (callback, val) {$/;"	m
-p5.PeakDetect.self._onPeak	pages/libraries/p5.sound.js	/^    var self = this;$/;"	f
-peakdetect	pages/libraries/p5.sound.js	/^var peakdetect;$/;"	f
-gain	pages/libraries/p5.sound.js	/^var gain;$/;"	v
-p5.Gain	pages/libraries/p5.sound.js	/^  var p5sound = master;$/;"	c
-p5.Gain.setInput	pages/libraries/p5.sound.js	/^  p5.Gain.prototype.setInput = function (src) {$/;"	m
-p5.Gain.connect	pages/libraries/p5.sound.js	/^  p5.Gain.prototype.connect = function (unit) {$/;"	m
-p5.Gain.disconnect	pages/libraries/p5.sound.js	/^  p5.Gain.prototype.disconnect = function () {$/;"	m
-p5.Gain.amp	pages/libraries/p5.sound.js	/^  p5.Gain.prototype.amp = function (vol, rampTime, tFromNow) {$/;"	m
-gain	pages/libraries/p5.sound.js	/^var gain;$/;"	f
-src_app	pages/libraries/p5.sound.js	/^var src_app;$/;"	v
+soundfile	pages/libraries/p5.sound.js	/^var soundfile;$/;"	f
+soundfile	pages/libraries/p5.sound.js	/^var soundfile;$/;"	v
+soundfile.Cue	pages/libraries/p5.sound.js	/^  var Cue = function (callback, time, id, val) {$/;"	c
+soundfile.Peak	pages/libraries/p5.sound.js	/^  var Peak = function (amp, i) {$/;"	c
+soundfile._createCounterBuffer	pages/libraries/p5.sound.js	/^  var _createCounterBuffer = function (buffer) {$/;"	f
+soundfile.countIntervalsBetweenNearbyPeaks	pages/libraries/p5.sound.js	/^  function countIntervalsBetweenNearbyPeaks(peaksObj) {$/;"	f
+soundfile.getPeaksAtThreshold	pages/libraries/p5.sound.js	/^  function getPeaksAtThreshold(data, threshold) {$/;"	f
+soundfile.getPeaksAtTopTempo	pages/libraries/p5.sound.js	/^  function getPeaksAtTopTempo(peaksObj, tempo, sampleRate, bpmVariance) {$/;"	f
+soundfile.groupNeighborsByTempo	pages/libraries/p5.sound.js	/^  function groupNeighborsByTempo(intervalCounts, sampleRate) {$/;"	f
+soundfile.mapTempo	pages/libraries/p5.sound.js	/^  function mapTempo(theoreticalTempo) {$/;"	f
 src_app	pages/libraries/p5.sound.js	/^var src_app;$/;"	f
+src_app	pages/libraries/p5.sound.js	/^var src_app;$/;"	v
+test	package.json	/^    "test": "echo \\"Error: no test specified\\" && exit 1"$/;"	f
+this._callback	pages/libraries/p5.sound.js	/^      this._callback = function () {$/;"	m
+this.bufferSourceNode	pages/libraries/p5.sound.js	/^      this.bufferSourceNode.onended = function (e) {$/;"	m
+this.parts	pages/libraries/p5.sound.js	/^      this.parts[i].onended = function () {$/;"	m
+this.value	pages/libraries/p5.dom.js	/^    this.value = function(val){$/;"	m
+type	package.json	/^    "type": "git",$/;"	f
+url	package.json	/^    "url": "git+https:\/\/github.com\/tatecarson\/rhizomep5js.git"$/;"	f
+url	package.json	/^    "url": "https:\/\/github.com\/tatecarson\/rhizomep5js\/issues"$/;"	f
+var.Cue	pages/libraries/p5.dom.js	/^  var Cue = function(callback, time, id, val) {$/;"	c
+version	package.json	/^  "version": "1.0.0",$/;"	f
+window.AudioBufferSourceNode	pages/libraries/p5.sound.js	/^  if (typeof window.AudioBufferSourceNode.prototype.start !== 'function') {$/;"	c
+window.AudioBufferSourceNode.start	pages/libraries/p5.sound.js	/^    window.AudioBufferSourceNode.prototype.start = window.AudioBufferSourceNode.prototype.noteGrainOn;$/;"	m
+window.AudioBufferSourceNode.stop	pages/libraries/p5.sound.js	/^    window.AudioBufferSourceNode.prototype.stop = window.AudioBufferSourceNode.prototype.noteOff;$/;"	m
+window.AudioContext	pages/libraries/p5.sound.js	/^  if (!window.AudioContext.prototype.hasOwnProperty('createScriptProcessor')) {$/;"	c
+window.AudioContext.createScriptProcessor	pages/libraries/p5.sound.js	/^    window.AudioContext.prototype.createScriptProcessor = window.AudioContext.prototype.createJavaScriptNode;$/;"	m
+window.OscillatorNode	pages/libraries/p5.sound.js	/^  if (typeof window.OscillatorNode.prototype.start !== 'function') {$/;"	c
+window.OscillatorNode.start	pages/libraries/p5.sound.js	/^    window.OscillatorNode.prototype.start = window.OscillatorNode.prototype.noteOn;$/;"	m
+window.OscillatorNode.stop	pages/libraries/p5.sound.js	/^    window.OscillatorNode.prototype.stop = window.OscillatorNode.prototype.noteOff;$/;"	m
+wrapElement	pages/libraries/p5.dom.js	/^  function wrapElement(elt) {$/;"	f
