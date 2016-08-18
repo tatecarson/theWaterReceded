@@ -14,7 +14,7 @@ module.exports = {
     {
       type: 'http',
       config: {
-        port: 8000,
+        port: process.env.PORT || 8000,
         staticDir: path.join(__dirname, 'pages')
       }
     },
@@ -23,18 +23,18 @@ module.exports = {
     {
       type: 'websockets',
       config: {
-        port: 8000,
+        port: process.env.PORT || 8000,
         maxSockets: 5000
       }
     },
 
-    // Start the OSC server on port 9000
-    {
-      type: 'osc',
-      config: {
-        port: 9000
-      }
-    }
+    // // Start the OSC server on port 9000
+    // {
+    //   type: 'osc',
+    //   config: {
+    //     port: 9000
+    //   }
+    // }
   ],
 
   // Configure data to be stored in `./tmp`
