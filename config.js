@@ -3,18 +3,18 @@ var fs = require('fs')
 
 // Create a directory to store data which will be used
 // to restore the server in case of crash.
-var storeDir = path.join(__dirname, 'tmp') 
+var storeDir = path.join(__dirname, 'tmp')
 if (!fs.existsSync(storeDir)) fs.mkdirSync(storeDir)
 
 module.exports = {
 
   servers: [
     // Start the HTTP server running on port 8000
-    // and serving static files from `./pages` 
+    // and serving static files from `./pages`
     {
       type: 'http',
       config: {
-        port: 8000,
+        port: process.env.PORT || 8000,
         staticDir: path.join(__dirname, 'pages')
       }
     },
@@ -23,7 +23,7 @@ module.exports = {
     {
       type: 'websockets',
       config: {
-        port: 8000,
+        port: process.env.PORT || 8000,
         maxSockets: 5000
       }
     },
@@ -38,7 +38,7 @@ module.exports = {
   ],
 
   // Configure data to be stored in `./tmp`
-  connections: { 
+  connections: {
     store: storeDir,
   }
 }

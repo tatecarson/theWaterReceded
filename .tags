@@ -4,6 +4,20 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+name	package.json	/^  "name": "rhizome",$/;"	f
+version	package.json	/^  "version": "1.0.0",$/;"	f
+description	package.json	/^  "description": "Instructions --------------",$/;"	f
+main	package.json	/^  "main": "config.js",$/;"	f
+scripts	package.json	/^  "scripts": {$/;"	f
+test	package.json	/^    "test": "echo \\"Error: no test specified\\" && exit 1"$/;"	f
+repository	package.json	/^  "repository": {$/;"	f
+type	package.json	/^    "type": "git",$/;"	f
+url	package.json	/^    "url": "git+https:\/\/github.com\/tatecarson\/rhizomep5js.git"$/;"	f
+author	package.json	/^  "author": "",$/;"	f
+license	package.json	/^  "license": "ISC",$/;"	f
+bugs	package.json	/^  "bugs": {$/;"	f
+url	package.json	/^    "url": "https:\/\/github.com\/tatecarson\/rhizomep5js\/issues"$/;"	f
+homepage	package.json	/^  "homepage": "https:\/\/github.com\/tatecarson\/rhizomep5js#readme"$/;"	f
 setup	pages/js/sketch.js	/^function setup() {$/;"	f
 draw	pages/js/sketch.js	/^function draw() {$/;"	f
 select	pages/libraries/p5.dom.js	/^  p5.prototype.select = function (e) {$/;"	m
