@@ -14,7 +14,7 @@ module.exports = {
     {
       type: 'http',
       config: {
-        port: process.env.PORT || 8000,
+        port: process.env.PORT,
         staticDir: path.join(__dirname, 'pages')
       }
     },
@@ -23,7 +23,7 @@ module.exports = {
     {
       type: 'websockets',
       config: {
-        port: process.env.PORT || 8000,
+        port: process.env.PORT,
         maxSockets: 5000
       }
     },
