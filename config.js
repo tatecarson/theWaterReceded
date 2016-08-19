@@ -14,19 +14,19 @@ module.exports = {
     {
       type: 'http',
       config: {
-        port: process.env.PORT || 8000,
+        port: parseInt(process.env.PORT, 10),
         staticDir: path.join(__dirname, 'pages')
       }
     },
 
     // Start the websockets server running on the same port as the HTTP server
-    {
-      type: 'websockets',
-      config: {
-        port: process.env.PORT || 8000,
-        maxSockets: 5000
-      }
-    },
+    // {
+    //   type: 'websockets',
+    //   config: {
+    //     port: process.env.PORT || 8000,
+    //     maxSockets: 5000
+    //   }
+    // },
 
     // // Start the OSC server on port 9000
     // {
