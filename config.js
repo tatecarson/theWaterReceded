@@ -28,13 +28,13 @@ module.exports = {
       }
     },
 
-    // // Start the OSC server on port 9000
-    // {
-    //   type: 'osc',
-    //   config: {
-    //     port: 9000
-    //   }
-    // }
+    // Start the OSC server on port 9000
+    {
+      type: 'osc',
+      config: {
+        port:  parseInt(process.env.PORT, 10) || 9000
+      }
+    }
   ],
 
   // Configure data to be stored in `./tmp`
