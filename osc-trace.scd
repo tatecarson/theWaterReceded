@@ -13,6 +13,9 @@
 b = NetAddr.new("localhost", 9000);
 )
 
+b = NetAddr.new("https://rhizomep5js.herokuapp.com", 50182);
+b = NetAddr.new("108.220.53.44", 50182);
+
 //if you need to restart
 "killall node".unixCmd;
 
