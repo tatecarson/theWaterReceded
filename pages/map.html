@@ -1,0 +1,45 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+  <style> body {padding: 0; margin: 0;} </style>
+
+  <!-- rhizome includes -->
+  <script src="/rhizome/rhizome.js"></script>
+  <script>
+    // var window.client;
+
+      window.client = new rhizome.Client()
+
+      // `rhizome.start` is the first function that should be called.
+      // The function inside is executed once the client managed to connect.
+      client.start(function(err) {
+        if (err) {
+          $('body').html('client failed starting : ' + err)
+          throw err
+        }
+
+        client.send('/sys/subscribe', ['/'])
+      })
+
+      client.on('connected', function() {
+        alert('connected!')
+      })
+
+      client.on('connection lost', function() {
+        alert('connection lost!')
+      })
+
+      client.on('server full', function() {
+        alert('server is full!')
+      })
+
+  </script>
+</head>
+
+<body>
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="js/map.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day" rel="stylesheet">
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Violin</title>
+
+  <!-- rhizome includes -->
+  <script src="/rhizome/rhizome.js"></script>
+  <script>
+    // var window.client;
+
+      window.client = new rhizome.Client()
+
+      // `rhizome.start` is the first function that should be called.
+      // The function inside is executed once the client managed to connect.
+      client.start(function(err) {
+        if (err) {
+          $('body').html('client failed starting : ' + err)
+          throw err
+        }
+
+        client.send('/sys/subscribe', ['/'])
+      })
+
+      client.on('connected', function() {
+        alert('connected!')
+      })
+
+      client.on('connection lost', function() {
+        alert('connection lost!')
+      })
+
+      client.on('server full', function() {
+        alert('server is full!')
+      })
+
+  </script>
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
+</head>
+
+<body>
+  <!-- p5js includes -->
+  <script src="js/violin.js" type="text/javascript"></script>
+  <script src="js/mover.js" type="text/javascript"></script>
+  <script src="js/recipe.js" type="text/javascript"></script>
+
+  <script src="libraries/p5.js" type="text/javascript"></script>
+</body>
+
+</html>
