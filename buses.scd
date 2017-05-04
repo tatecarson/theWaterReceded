@@ -1,6 +1,6 @@
 s.newBusAllocators;
 
-//bus allocatn
+//bus allocation
 ~foaSpreadBus = Bus.audio(s, 8);
 ~foaDiffuseBus = Bus.audio(s, 8);
 ~distBusHur = Bus.audio(s, 2);
@@ -26,7 +26,7 @@ s.newBusAllocators;
   [delayTime: i.linlin(0, 6, 3, 0.2), damp: 0.2, size: i.linlin(0, 6, 7, 1),
   diff: 0.707, feedback: 0, in: ~verbBus[i], out: ~foaDiffuseBus],
   addAction: \addToTail)};
-  
+
 //Ambisonics init
 ~foaSpread = Synth(\foaSpread,
               [

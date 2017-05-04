@@ -1,7 +1,7 @@
 //rounds ascii value to a given scale
 ~asciiToScale = {|ascii, scale, length|
   var nearest;
-
+  
   // function to transform to midi keys
   nearest = { |arr, scale|
     arr.cpsmidi.round.asInteger.collect(_.nearestInScale(scale, length))
