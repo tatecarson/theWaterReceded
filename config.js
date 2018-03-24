@@ -1,10 +1,11 @@
-var fs = require('fs')
-  , path = require('path')
+var fs = require('fs'),
+  path = require('path')
 
 // Create a directory to store data which will be used
 // to restore the server in case of crash.
 var storeDir = path.join(__dirname, 'tmp')
-if (!fs.existsSync(storeDir)) fs.mkdirSync(storeDir)
+if (!fs.existsSync(storeDir))
+  fs.mkdirSync(storeDir)
 
 module.exports = {
 
@@ -32,13 +33,13 @@ module.exports = {
     {
       type: 'osc',
       config: {
-        port: 9000,
+        port: 9000
       }
     }
   ],
 
   // Configure data to be stored in `./tmp`
   connections: {
-    store: storeDir,
+    store: storeDir
   }
 }

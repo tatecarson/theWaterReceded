@@ -24,8 +24,7 @@ client.on('message', function(address, args) {
     show = args[6];
 
     //onset, attack, decay, dur
-    movers.push(new Mover(onset, freq, onset+attack, freq-amp, onset+dur-release,
-      freq-amp, onset+dur, freq, show));
+    movers.push(new Mover(onset, freq, onset + attack, freq - amp, onset + dur - release, freq - amp, onset + dur, freq, show));
   }
 })
 
@@ -40,7 +39,6 @@ client.on('message', function(address, args) {
     recipes.push(new Recipe(onset, freq, amp, velocity, show));
   };
 });
-
 
 client.on('message', function(address, args) {
   if (address === '/working') {
@@ -88,14 +86,14 @@ function draw() {
   //recipe name
   textSize(18);
   if (recipeName) { //to handle null
-      text(recipeName, 125, 25);
-      text(repititions, 125, 50);
+    text(recipeName, 125, 25);
+    text(repititions, 125, 50);
   }
 
   //post green dot
   if (working) {
     fill(0, 255, 0);
-    ellipse(25,50,25,25);
+    ellipse(25, 50, 25, 25);
 
   } else {}
 }

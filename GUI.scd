@@ -1,4 +1,4 @@
-//control everything
+//control everythin
 
 Window.closeAll;
 w = Window("nested", Rect(750, 50, 550, 550))

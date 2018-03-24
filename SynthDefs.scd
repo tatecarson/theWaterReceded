@@ -1,10 +1,10 @@
-//Synthesizers 
+//Synthesizers
 SynthDef(\pad, {
 	|dur = 1, envgendivisor = 8, freq = 512, gate = 1,
-	 kbnmul = 0.005, peak = 1, boost = 3, amp = 1, out|
+	kbnmul = 0.005, peak = 1, boost = 3, amp = 1, out|
 
 	var env			=	Env.sine(dur, peak);
-	var envgen	=	EnvGen.kr(env, gate, doneAction: 2);
+	var envgen	    =	EnvGen.kr(env, gate, doneAction: 2);
 	var kbn1		=	LFBrownNoise0.kr(freq, mul: kbnmul, add: 1);
 	var saw1		=	LFSaw.ar(freq * kbn1, mul: (envgen / envgendivisor));
 	var kbn2		=	LFBrownNoise0.kr(freq, mul: kbnmul, add: 1);
@@ -64,8 +64,8 @@ SynthDef(\femsound,{|out=0, pan=0.0, amp=0.05, freq=440, dur= 0.1, resonance=0.5
 	sound = (original*sound)+ LPF.ar(Klank.ar(`[freq*[1,2.1,3.3,5,6.7],0.2!5,[1.0,0.6,0.7,0.2,0.5]*resonance],
            sound),2000+(amp*18000));
 	env = EnvGen.ar(Env([0,1,0.2,1,0],[0.001,0.003,0.001,dur], curve),doneAction:2);
-  filter = Resonz.ar(sound, ffreq, bwr, 1);
-	Out.ar(out,Pan2.ar(filter*env*amp*femadjust,pan))
+    filter = Resonz.ar(sound, ffreq, bwr, 1);
+	Out.ar(out, Pan2.ar(filter*env*amp*femadjust,pan))
 }).add;
 
 SynthDef(\snap, { | curve = -512, dur = 1, freq = 400, im = 1, level = 0.2, out, rt = 0.1 |
@@ -94,10 +94,10 @@ SynthDef(\reverb, { |out, in, damp = 0.5,
 
 //Ambisonics
 {
-  ~spreadEncoder = FoaEncoderKernel.newSpread;
-  ~diffuseEncoder = FoaEncoderKernel.newDiffuse;
+	~spreadEncoder = FoaEncoderKernel.newSpread;
+	~diffuseEncoder = FoaEncoderKernel.newDiffuse;
 	2.wait;
-  s.sync;
+    s.sync;
 
 	//coordinates for speakers
 	~azArray = [-0.454,0.454,0,0,-1.047,1.047,-2.39,2.39]; // angles
