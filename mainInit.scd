@@ -32,8 +32,6 @@ s.waitForBoot{
 
 	s.sync;
 
-	"GUI.scd".loadRelative;
-	1.wait;
-	// ServerView().front
+	Require("GUI");
 };
 )
