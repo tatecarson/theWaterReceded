@@ -14,5 +14,5 @@
 ~onset = ~windspeed.linlin(~windspeed.minItem, ~windspeed.maxItem, 5.0, 0.01);
 ~dur = ~windspeed.linlin(~windspeed.minItem, ~windspeed.maxItem, 450, 130);
 ~release = ~windspeed.linlin(~windspeed.minItem, ~windspeed.maxItem, 145, 1);
-
+ 
 )

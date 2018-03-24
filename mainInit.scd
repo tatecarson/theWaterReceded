@@ -12,24 +12,23 @@ s.options.sampleRate_(44100);
 
 s.waitForBoot{
 	Require("SynthDefs");
+
 	s.sync;
 	2.wait;
+
 	Require("buses");
 	Require("loadWeatherData");
-
-	//load recipieDataPrep folder
 	Require("recipeDataPrep/*");
-
-	//round recipes to scale
 	Require("asciiToScale");
 
 	//recipe patterns and sync
-	"recipePatterns.scd".loadRelative;
-	"recipeNotationSend.scd".loadRelative;
-	"recipePatternSeq.scd".loadRelative;
+	Require("recipePatterns.scd");
+	Require("recipeNotationSend.scd");
+	Require("recipePatternSeq.scd");
+
 	s.sync;
 
-	"startComp.scd".loadRelative;
+	Require("startComp.scd");
 
 	s.sync;
 
