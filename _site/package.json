@@ -1,0 +1,10 @@
+{
+	"name": "and-the-water-receded",
+	"description": "web part of and the water receded",
+	"version": "0.1.1",
+	"main": "config.js",
+	"scripts": {
+		"start": "rhizome config"
+	},
+	"author": "Tate Carson"
+}
