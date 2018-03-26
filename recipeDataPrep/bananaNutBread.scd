@@ -1,7 +1,7 @@
 /*
-This processes a recipe for numberical content
+This processes a recipe for numerical content
 The number of ingredients, directions, and verbs from directions
-are stored along with their lenghts and ascii values
+are stored along with their lengths and ascii values
 */
 
 ~bananaNutBread = ();

@@ -12,4 +12,12 @@ Load the Quarks window with `Quarks.gui`. Click on `Load Quarks Set` and select 
 
 ### Start
 
-To run project start in maininit.scd.
+* To run project start in maininit.scd.
+* ssh
+  * rhizome config
+
+### Deploy
+
+Runs a git pull on the ec2 server to bring in changes from github
+
+./deploy.sh
