@@ -16,10 +16,10 @@ q = ~view.addFlowLayout;
 q.nextLine;
 
 //local or web
-~netAddr = EZListView.new(~view,150@65, " Target");
-~netAddr.addItem(\Web, { b = NetAddr.new("ec2-52-53-194-77.us-west-1.compute.amazonaws.com", 9000)}; );
-~netAddr.addItem(\LocalHost, { b = NetAddr.new("localhost", 9000)};);
-~netAddr.setColors(Color.grey, Color.white);
+// ~netAddr = EZListView.new(~view,150@65, " Target");
+// ~netAddr.addItem(\Web, { b = NetAddr.new("ec2-52-53-194-77.us-west-1.compute.amazonaws.com", 9000)}; );
+// ~netAddr.addItem(\LocalHost, { b = NetAddr.new("localhost", 9000)};);
+// ~netAddr.setColors(Color.grey, Color.white);
 
 q.nextLine;
 
