@@ -1,7 +1,7 @@
-//control everythin
+//control everything
 
 Window.closeAll;
-w = Window("nested", Rect(750, 50, 550, 550))
+w = Window("nested", Rect(800, 50, 550, 550))
 .front
 .alwaysOnTop_(true);
 w.onClose{ ~timeTask.free;};
@@ -13,19 +13,12 @@ q = ~view.addFlowLayout;
 .string_("Setup")
 .font_(Font("Monaco", 20));
 
-q.nextLine;
-
-//local or web
-// ~netAddr = EZListView.new(~view,150@65, " Target");
-// ~netAddr.addItem(\Web, { b = NetAddr.new("ec2-52-53-194-77.us-west-1.compute.amazonaws.com", 9000)}; );
-// ~netAddr.addItem(\LocalHost, { b = NetAddr.new("localhost", 9000)};);
-// ~netAddr.setColors(Color.grey, Color.white);
 
 q.nextLine;
 
 //if local host open terminal without aws key
 ~awsText = StaticText(~view,150 @30)
-.string_("1. Start AWS -        rhizome config");
+.string_("1. Start AWS");
 
 q.nextLine;
 
@@ -65,7 +58,7 @@ q.nextLine;
 
 q.nextLine;
 
-//start it
+//start the composition
 ~startComp = Button(~view, 150@30)
 .states_([
 	["Start Comp"],
@@ -123,6 +116,7 @@ q.nextLine;
 ~timeString.font = Font("Monaco", 85);
 ~timeString.string = "0:00";
 
+//display current recipe
 q.nextLine;
 ~recipeGui = StaticText(~view, Rect(25, 15, 550, 100));
 ~recipeGui.background=Color.white;

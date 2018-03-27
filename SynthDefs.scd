@@ -37,12 +37,12 @@ SynthDef(\kords2, { | freq = 512, gate = 1, level = 0.1, ratio = 1.125, dur = 1,
 }).add;
 
 SynthDef(\ping, { |a = 1, amp = 0.2, ampmodfreq = 50, dur = 1, freq = 440, out|
-    var env     = Env.new([0, amp, amp * 0.5, 0], [0.0001, 0.05, dur - 0.0001 - 0.05], \sine);
-    var envgen  = EnvGen.kr(env, doneAction: 2);
-    var sin     = SinOsc.ar(freq ! 2, mul: envgen);
-    var noiz    = Gendy2.ar(minfreq: freq * 0.5, maxfreq: freq, mul: envgen).fold2(amp);
-    var filter1 = RHPF.ar(sin, (freq * 2).clip(50, 44100 / 2.5), 0.25);
-    Out.ar(out, filter1 * 24);
+	var env     = Env.new([0, amp, amp * 0.5, 0], [0.0001, 0.05, dur - 0.0001 - 0.05], \sine);
+	var envgen  = EnvGen.kr(env, doneAction: 2);
+	var sin     = SinOsc.ar(freq ! 2, mul: envgen);
+	var noiz    = Gendy2.ar(minfreq: freq * 0.5, maxfreq: freq, mul: envgen).fold2(amp);
+	var filter1 = RHPF.ar(sin, (freq * 2).clip(50, 44100 / 2.5), 0.25);
+	Out.ar(out, filter1 * 24);
 }).add;
 
 
@@ -57,14 +57,14 @@ SynthDef(\bass, {|ffreq = 0.3, osc1 = 50, osc2 = 100, trem = 5, amp = 0.0, out|
 
 
 SynthDef(\femsound,{|out=0, pan=0.0, amp=0.05, freq=440, dur= 0.1, resonance=0.5, original=0.0,
-                    curve = 1, ffreq = 440, bwr = 1, femadjust = 1|
+	curve = 1, ffreq = 440, bwr = 1, femadjust = 1|
 	var sound,env, filter;
 	sound = VarSaw.ar(freq)*Line.kr(1,0,0.1);
 	sound = sound + Blip.ar(freq,XLine.kr(1,100,0.03))*Line.kr(1,0,0.1);
 	sound = (original*sound)+ LPF.ar(Klank.ar(`[freq*[1,2.1,3.3,5,6.7],0.2!5,[1.0,0.6,0.7,0.2,0.5]*resonance],
-           sound),2000+(amp*18000));
+		sound),2000+(amp*18000));
 	env = EnvGen.ar(Env([0,1,0.2,1,0],[0.001,0.003,0.001,dur], curve),doneAction:2);
-    filter = Resonz.ar(sound, ffreq, bwr, 1);
+	filter = Resonz.ar(sound, ffreq, bwr, 1);
 	Out.ar(out, Pan2.ar(filter*env*amp*femadjust,pan))
 }).add;
 
@@ -81,7 +81,7 @@ SynthDef(\satan, {
 	arg envTime = 1.0e-3, knee = -10.dbamp, out, in, mix = 1, amp = 0.1;
 	var sig, inSig = In.ar(in, 2);
 	sig = DelayC.ar(inSig, 0.01, envTime * 0.5) *
-				EnvFollow.ar(inSig, 1 - (envTime * SampleRate.ir).reciprocal).max(knee).reciprocal;
+	EnvFollow.ar(inSig, 1 - (envTime * SampleRate.ir).reciprocal).max(knee).reciprocal;
 	sig = sig * amp;
 	Out.ar(out, (1 - mix) * inSig + (sig * mix));
 }).add;
@@ -97,7 +97,7 @@ SynthDef(\reverb, { |out, in, damp = 0.5,
 	~spreadEncoder = FoaEncoderKernel.newSpread;
 	~diffuseEncoder = FoaEncoderKernel.newDiffuse;
 	2.wait;
-    s.sync;
+	s.sync;
 
 	//coordinates for speakers
 	~azArray = [-0.454,0.454,0,0,-1.047,1.047,-2.39,2.39]; // angles
@@ -121,8 +121,8 @@ SynthDef(\reverb, { |out, in, damp = 0.5,
 	//concerthall decoder
 	~decoder = FoaDecoderMatrix.newDiametric(~directions[(0..3)]);
 
-  SynthDef(\foaSpread, {
-    arg inBus, angle = 0, theta = 0, phi = 0, rotRate, out;
+	SynthDef(\foaSpread, {
+		arg inBus, angle = 0, theta = 0, phi = 0, rotRate, out;
 		var src, foa, rotAngle, tilAngle, tumAngle, decoderMatrix, sig;
 
 		rotAngle = LFNoise2.kr(rotRate, 2pi);
@@ -130,32 +130,32 @@ SynthDef(\reverb, { |out, in, damp = 0.5,
 		tumAngle = LFNoise2.kr(rotRate, 2pi);
 
 		src = In.ar(inBus, 8);
-    foa = FoaEncode.ar(src, ~spreadEncoder);
+		foa = FoaEncode.ar(src, ~spreadEncoder);
 
 		foa = FoaRTT.ar(foa, rotAngle, tilAngle, tumAngle);
 		foa = FoaTransform.ar(foa, 'press', angle, theta, phi);
 
-    sig = FoaDecode.ar(foa, ~decoder);
-    Out.ar(out, sig);
-  }).add;
+		sig = FoaDecode.ar(foa, ~decoder);
+		Out.ar(out, sig);
+	}).add;
 
-  SynthDef(\foaDiffuse, {
-      arg inBus, rotRate = 1.0, angle = 0, theta = 0, phi = 0, gain, distance,
-					out;
-      var src, foa, rotAngle, tilAngle, tumAngle, decoderMatrix, sig;
+	SynthDef(\foaDiffuse, {
+		arg inBus, rotRate = 1.0, angle = 0, theta = 0, phi = 0, gain, distance,
+		out;
+		var src, foa, rotAngle, tilAngle, tumAngle, decoderMatrix, sig;
 
-      src = In.ar(inBus, 8);
-      foa = FoaEncode.ar(src, ~diffuseEncoder);
+		src = In.ar(inBus, 8);
+		foa = FoaEncode.ar(src, ~diffuseEncoder);
 
-			foa = FoaTransform.ar(foa, 'focus', angle, theta, phi);
+		foa = FoaTransform.ar(foa, 'focus', angle, theta, phi);
 
-			foa = FoaTransform.ar(foa, 'rtt',
-					LFNoise2.ar(rotRate, pi, add: pi),
-					LFNoise2.ar(rotRate**(1/3), pi, add: pi),
-					LFNoise2.ar(rotRate**(2/3), pi, add: pi)
-			);
+		foa = FoaTransform.ar(foa, 'rtt',
+			LFNoise2.ar(rotRate, pi, add: pi),
+			LFNoise2.ar(rotRate**(1/3), pi, add: pi),
+			LFNoise2.ar(rotRate**(2/3), pi, add: pi)
+		);
 
-      sig = FoaDecode.ar(foa,~decoder);
-      Out.ar(out, sig);
-  }).add;
+		sig = FoaDecode.ar(foa,~decoder);
+		Out.ar(out, sig);
+	}).add;
 }.fork;
