@@ -16,30 +16,9 @@ q = ~view.addFlowLayout;
 
 q.nextLine;
 
-//if local host open terminal without aws key
-~awsText = StaticText(~view,150 @30)
-.string_("1. Start AWS");
-
-q.nextLine;
-
-//logon to EC2
-~awsStart = Button(~view, 150@30)
-.states_([
-	["Open Terminal"]
-])
-.action_({ |v|
-	if(v.value == 0){
-		"cd ~/documents/AWS; ssh -i \"rhizome-test.pem\" ubuntu@ec2-52-53-194-77.us-west-1.compute.amazonaws.com".runInTerminal;
-	}
-}
-
-);
-
-q.nextLine;
-
 //test to see if connection working
 ~ctText = StaticText(~view, 150@10)
-.string_("2. Test Connection");
+.string_("Test Connection");
 
 q.nextLine;
 
@@ -68,7 +47,7 @@ q.nextLine;
 	if(v.value == 1){
 
 		//Notation
-		Tdef(\addNodes).play(quant: 0);
+ 		Tdef(\addNodes).play(quant: 0);
 		Tdef(\staggered).play;
 
 		~bass = Synth(\bass, [\out, ~distBusHur]);

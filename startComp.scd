@@ -3,6 +3,7 @@
 ~violinTrigger = 0!8;
 ~celloTrigger = 0!8;
 ~clarTrigger = 0!8;
+~audienceTrigger = 0!8;
 
 Tdef(\addNodes, {
 
@@ -15,6 +16,7 @@ Tdef(\addNodes, {
 		~violinTrigger[((i+1)*2)%8] = 1;
 		~celloTrigger[((i+3)*2)%8] = 1;
 		~clarTrigger[((i+2)*2)%8]  = 1;
+		~audienceTrigger[((i+1)*2)%8]  = 1;
 
 		"Triggers".postln;
 		~violinTrigger.debug("violin");
@@ -32,6 +34,7 @@ Tdef(\staggered, {
 		b.sendMsg("/violin", 500, ~latFreq[i], ~amp[i], ~dur[i], ~attack[i], ~release[i], ~violinTrigger[i%7]);
 		b.sendMsg("/cello", 500, ~longFreq[i], ~amp[i], ~dur[i], ~attack[i], ~release[i], ~celloTrigger[i%7]);
 		b.sendMsg("/clar", 500, ~latFreq[i], ~amp[i], ~dur[i], ~attack[i], ~release[i], ~clarTrigger[i%7]);
+		b.sendMsg("/audience", ~latFreq[i], ~amp[i], ~dur[i], ~attack[i], ~release[i], ~audienceTrigger[i%7]);
 
 		//everything
 		b.sendMsg("/sc", 500, ~latFreq[i], ~amp[i], ~dur[i], ~attack[i], ~release[i], 2);
@@ -48,7 +51,7 @@ Tdef(\staggered, {
 				\freq, ~longFreq[i].linlin(60, 500, 1500, 50),
 				\kbnmul, ~pressure[i].linlin(~pressure.minItem, ~pressure.maxItem, 10.0, 0.065),
 				\amp, ~pressure[i].linlin(~pressure.minItem, ~pressure.maxItem, 1.0, 0.1),
-				\rest, Pif(0.5.coin, \rest),
+				// \rest, Pif(0.5.coin, \rest),
 				\out, ~distBusHur
 			).play(quant: 0);
 
@@ -59,7 +62,7 @@ Tdef(\staggered, {
 					~longFreq[i].linlin(60, 500, 16, 1)),
 				\amp, ~pressure[i].linlin(~pressure.minItem, ~pressure.maxItem, 0.8, 0.1),
 				\ratio, Pn(Pshuf([13/11, 17/11, 23/11, 29/11], 1), 1),
-				\rest, Pif(0.5.coin, \rest),
+				// \rest, Pif(0.5.coin, \rest),
 				\out, ~distBusHur
 			).play(quant: 0);
 

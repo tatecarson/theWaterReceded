@@ -1,8 +1,77 @@
-body, html {
-  padding: 0;
-  margin: 0;
-  width: 100%;
+/* body {
+  font-size: 45pt;
+  font-family: Georgia, "Times New Roman", Times, serif;
+} */
+body,
+html {
+  display: grid;
+  animation: 10s infinite fadingcolors linear;
+}
+
+.overlay {
   height: 100%;
-  font-family: 'sans-serif';
-  font-size: 20px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  margin: auto;
+  /* position: relative; */
+  top: 1%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  color: #f1f1f1;
+}
+
+.remove-overlay {
+  background-color: #f8f8f8;
+  color: black;
+}
+
+.move {
+  font-size: 30pt;
+}
+
+.colors {
+  /* background-color: lightgreen; */
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  /* z-index: 1; */
+  top: 0;
+  left: 0;
+}
+
+@-webkit-keyframes fadingcolors {
+  0% {
+    background: #e3dcc8;
+  }
+  15% {
+    background: #a9b3a5;
+  }
+  30% {
+    background: #eae9e3;
+  }
+  45% {
+    background: #d2c385;
+  }
+  60% {
+    background: #fcaa97;
+  }
+  75% {
+    background: #d9edd1;
+  }
+  90% {
+    background: #e5cebd;
+  }
+  100% {
+    background: #e3dcc8;
+  }
 }

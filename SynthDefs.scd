@@ -96,30 +96,32 @@ SynthDef(\reverb, { |out, in, damp = 0.5,
 {
 	~spreadEncoder = FoaEncoderKernel.newSpread;
 	~diffuseEncoder = FoaEncoderKernel.newDiffuse;
+	~decoder = FoaDecoderKernel.newUHJ;
+
 	2.wait;
 	s.sync;
 
 	//coordinates for speakers
-	~azArray = [-0.454,0.454,0,0,-1.047,1.047,-2.39,2.39]; // angles
-	~elArray = [0.088,0.088,0,1.22,0.35,0.35,0.524,0.524]; // elev
-
-
-	// specify 1/2 the desired directions
-
-	//setup for ATK
-	//combine az and el array
-	~hall = [~azArray, ~elArray];
-
-	//lace together
-	~directions = ~hall.lace(16);
-
-	//combine
-	~directions = ~directions.clump(2);
-
-	~directions = [[-0.454, 0.088], [0.454, 0.088], [0, 0], [0.35, 0.35]];
+	// ~azArray = [-0.454,0.454,0,0,-1.047,1.047,-2.39,2.39]; // angles
+	// ~elArray = [0.088,0.088,0,1.22,0.35,0.35,0.524,0.524]; // elev
+	//
+	//
+	// // specify 1/2 the desired directions
+	//
+	// //setup for ATK
+	// //combine az and el array
+	// ~hall = [~azArray, ~elArray];
+	//
+	// //lace together
+	// ~directions = ~hall.lace(16);
+	//
+	// //combine
+	// ~directions = ~directions.clump(2);
+	//
+	// ~directions = [[-0.454, 0.088], [0.454, 0.088], [0, 0], [0.35, 0.35]];
 
 	//concerthall decoder
-	~decoder = FoaDecoderMatrix.newDiametric(~directions[(0..3)]);
+	// ~decoder = FoaDecoderMatrix.newDiametric(~directions[(0..3)]);
 
 	SynthDef(\foaSpread, {
 		arg inBus, angle = 0, theta = 0, phi = 0, rotRate, out;

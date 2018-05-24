@@ -1,8 +1,8 @@
 s.newBusAllocators;
 
 //bus allocation
-~foaSpreadBus = Bus.audio(s, 8);
-~foaDiffuseBus = Bus.audio(s, 8);
+~foaSpreadBus = Bus.audio(s, 2);
+~foaDiffuseBus = Bus.audio(s, 2);
 ~distBusHur = Bus.audio(s, 2);
 ~verbBusHur = Bus.audio(s, 2);
 ~distBus = 7.collect{Bus.audio(s, 2)};
