@@ -119,19 +119,20 @@ Tdef(\staggered, {
 
 				//start recipe movement
 				~clock.clear;
-				~clock = SoftClock(0.5);
-				~clock.fadeTempo(4, 60*5, 4);
+				~clock = SoftClock();
+				~clock.fadeTempo(5, 60*3.5);
 
 				//sequencing pspawners from recipePatternSeq.scd
 				~seq = Pseq([
-					Pseq([~oyster], 2),
-					Pseq([~bananaNut], 3),
-					Pseq([~creoleBread], 4),
-					Pseq([~frozenLemon], 5),
+					Pseq([~oyster], 3),
+					Pseq([~bananaNut], 4),
+					Pseq([~creoleBread], 5),
+		/*			Pseq([~frozenLemon], 5),
 					Pseq([~lemonThin], 6),
-					Pseq([~oatmeal], 7),
-					Pseq([~pecan], 8),
-					Pseq([~end], 1)
+					Pseq([~oatmeal], 7),*/
+					Pseq([~pecan], 6),
+					// Pseq([~end], 1)
+					~end.next
 				], 1).play(~clock);
 			}
 		);

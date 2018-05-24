@@ -609,12 +609,18 @@
 });
 
 //to tell everyone it's over
-~end = Plazy({
+/*~end = Plazy({
 	//clear background
 	b.sendMsg("/clear");
 	{~recipeGui.string = "THE END"}.defer;
 	b.sendMsg("/recipeName", "THE END");
-});
+});*/
+~end = Pfunc({
+	//clear background
+	b.sendMsg("/clear");
+	{~recipeGui.string = "THE END"}.defer;
+	b.sendMsg("/recipeName", "THE END");
+}).asStream;
 
 //play the synth and notation at the same time
 ~oyster = Ppar([~oysterSeq, ~oysterVerbSeq]);

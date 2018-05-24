@@ -2,52 +2,52 @@
 <html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <!-- <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' /> -->
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"
-    />
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <!-- <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' /> -->
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"
+  />
 
-    <title>Rhizome example</title>
-    <script src="rhizome/rhizome.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.0.1/Tone.min.js"></script>
-    <script src="libraries/StartAudioContext.js"></script>
+  <title>And the water receded</title>
+  <script src="rhizome/rhizome.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.0.1/Tone.min.js"></script>
+  <script src="libraries/StartAudioContext.js"></script>
 
 
-    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css" /> -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="css/styles.css" /> -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css" />
 </head>
 
 <body>
-    <div id="myNav" class="overlay">
-        <div class="overlay-content">
-            <h2>And the water receded</h2>
+  <div id="myNav" class="overlay">
+    <div class="overlay-content">
+      <h2>And the water receded</h2>
 
-            <div class="remove-overlay" onclick="closeNav()">
-                <p>
-                    <h3>
-                        TAP HERE TO START ALLOW SOUND
-                    </h3>
-                </p>
-            </div>
-        </div>
+      <div class="remove-overlay" onclick="closeNav()">
+        <p>
+          <h3>
+            TAP HERE TO START ALLOW SOUND
+          </h3>
+        </p>
+      </div>
     </div>
-    <div class="colors">
+  </div>
+  <div class="colors">
 
-    </div>
+  </div>
 
 
-    <script type="text/javascript">
+  <script type="text/javascript">
 
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
-        }
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
 
-        StartAudioContext(Tone.context, ".remove-overlay").then(() => {
-            console.log('sound working')
-        });
-    </script>
-    <script src="js/audience.js"></script>
+    StartAudioContext(Tone.context, ".remove-overlay").then(() => {
+      console.log('sound working')
+    });
+  </script>
+  <script src="js/audience.js"></script>
 </body>
 
 </html>
