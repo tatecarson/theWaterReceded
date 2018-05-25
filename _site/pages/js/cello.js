@@ -13,7 +13,7 @@ var working = false;
 var recipeName;
 var repititions;
 
-client.on('message', function(address, args) {
+client.on('message', function (address, args) {
   if (address === '/cello') {
     console.log(args);
     freq = args[1];
@@ -28,7 +28,7 @@ client.on('message', function(address, args) {
   }
 })
 
-client.on('message', function(address, args) {
+client.on('message', function (address, args) {
   if (address === '/celloRecipe') {
     console.log(args);
     freq = args[1];
@@ -40,7 +40,7 @@ client.on('message', function(address, args) {
   };
 });
 
-client.on('message', function(address, args) {
+client.on('message', function (address, args) {
   if (address === '/working') {
     if (args[0] == 1) {
       console.log("i'm working")
@@ -51,7 +51,7 @@ client.on('message', function(address, args) {
   }
 });
 
-client.on('message', function(address, args) {
+client.on('message', function (address, args) {
   if (address === '/recipeName') {
     recipeName = args[0];
     repititions = args[1];
@@ -81,7 +81,7 @@ function draw() {
 
   //title
   fill(255);
-  text("Cello", 25, 25);
+  text("Player Two", 25, 25);
 
   //recipe name
   textSize(18);

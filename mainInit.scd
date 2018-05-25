@@ -38,5 +38,3 @@ s.waitForBoot{
 	Require("GUI");
 };
 )
-
-

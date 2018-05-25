@@ -132,7 +132,7 @@ Tdef(\staggered, {
 					Pseq([~oatmeal], 7),*/
 					Pseq([~pecan], 6),
 					// Pseq([~end], 1)
-					~end.next
+					Pn(~end, 1)
 				], 1).play(~clock);
 			}
 		);

@@ -11,9 +11,9 @@ var release = 25;
 var show;
 var working = false;
 var recipeName;
-var repititions;
+var repetitions;
 
-client.on('message', function(address, args) {
+client.on('message', function (address, args) {
   if (address === '/clar') {
     console.log(args);
     freq = args[1];
@@ -24,12 +24,11 @@ client.on('message', function(address, args) {
     show = args[6];
 
     //onset, attack, decay, dur
-    movers.push(new Mover(onset, freq, onset+attack, freq-amp, onset+dur-release,
-      freq-amp, onset+dur, freq, show));
+    movers.push(new Mover(onset, freq, onset + attack, freq - amp, onset + dur - release, freq - amp, onset + dur, freq, show));
   }
 })
 
-client.on('message', function(address, args) {
+client.on('message', function (address, args) {
   if (address === '/working') {
     if (args[0] == 1) {
       console.log("i'm working")
@@ -40,14 +39,14 @@ client.on('message', function(address, args) {
   }
 });
 
-client.on('message', function(address, args) {
+client.on('message', function (address, args) {
   if (address === '/recipeName') {
     recipeName = args[0];
     repititions = args[1];
   };
 });
 
-client.on('message', function(address, args) {
+client.on('message', function (address, args) {
   if (address === '/clarRecipe') {
     console.log(args);
     freq = args[1];
@@ -82,20 +81,20 @@ function draw() {
 
   //title
   fill(255);
-  text("Clarinet", 25, 25);
+  text("Player 1", 25, 25);
 
   //recipe name
   textSize(18);
   if (recipeName) { //to handle null
-      text(recipeName, 125, 25);
-      text(repititions, 125, 50);
+    text(recipeName, 125, 25);
+    text(repetitions, 125, 50);
 
   }
 
   //post green dot
   if (working) {
     fill(0, 255, 0);
-    ellipse(25,50,25,25);
+    ellipse(25, 50, 25, 25);
 
   } else {}
 }
