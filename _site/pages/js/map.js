@@ -6,30 +6,48 @@ var mapimg,
   hh = window.innerHeight,
   zoom = 4,
   i = 2,
-  mapURL;
+  mapUrl;
 
-var ing, lifespan;
+var ing,
+  lifespan;
 var ingredients = [];
 
-client.on("message", function(address, args) {
+const client = new rhizome.Client()
+// `rhizome.start` is the first function that should be called. The function
+// inside is executed once the client managed to connect.
+client.start(function (err) {
+  if (err) {
+    $('body').html('client failed starting : ' + err)
+    throw err
+  }
+
+  client.send('/sys/subscribe', ['/'])
+})
+
+client.on('connected', function () {
+  alert('connected!')
+})
+
+client.on('connection lost', function () {
+  alert('connection lost!')
+})
+
+client.on('server full', function () {
+  alert('server is full!')
+})
+
+client.on("message", function (address, args) {
   if (address === "/map") {
     i = i + 1;
   }
 });
 
-client.on("message", function(address, args) {
+client.on("message", function (address, args) {
   if (address === "/recipe") {
     ing = args[0];
 
     if (ing) {
-      ingredients.push(
-        new Ingredient(
-          ing,
-          500,
-          random(-ww / 2 + 100, ww / 2 - 100),
-          random(-hh / 2 + 100, hh / 2 - 100)
-        )
-      );
+      ingredients.push(new Ingredient(ing, 500, random(-ww / 2 + 100, ww / 2 - 100), random(-hh / 2 + 100, hh / 2 - 100)));
     }
   }
 });
@@ -40,45 +58,25 @@ function Ingredient(ing, lifespan, x, y) {
   this.x = x;
   this.y = y;
 
-  this.display = function() {
+  this.display = function () {
     textSize(30);
     textFont("Dawning of a New Day");
     fill(255, 255, 255, this.lifespan);
     text(this.ing, this.x, this.y);
   };
 
-  this.dissolve = function() {
+  this.dissolve = function () {
     this.lifespan--;
   };
 }
 
-client.on("message", function(address, args) {
-  if (address === "/clear") {
-    //draw background
-    image(mapimg, 0, 0);
-  }
-});
-//api.mapbox.com/v4/mapbox.dark/-76.9,38.9,5/1000x1000.png?access_token=pk.eyJ1IjoidGFjYXJzb24iLCJhIjoiY2pnY3FqcnY3OHRzZzJxbWQydDdzNW5xNSJ9.r9RXVgx8YPy_bwDbd6CpCQ
-//api.mapbox.com/v4/mapbox.dark/-89,30,4/1760x881.png?access_token=pk.eyJ1IjoidGFjYXJzb24iLCJhIjoiY2pnY3FqcnY3OHRzZzJxbWQydDdzNW5xNSJ9.r9RXVgx8YPy_bwDbd6CpCQ
-function preload() {
-  mapURL =
-    "https://api.mapbox.com/v4/mapbox.dark/" +
-    clat +
-    "," +
-    clon +
-    "," +
-    zoom +
-    "/" +
-    ww +
-    "x" +
-    hh +
-    ".png32" +
-    "?access_token=pk.eyJ1IjoidGFjYXJzb24iLCJhIjoiY2pnY3FqcnY3OHRzZzJxbWQydDdzNW5xNSJ9.r9RXVgx8YPy_bwDbd6CpCQ";
-
-  mapimg = loadImage(mapURL);
-
-  katrina = loadStrings("data/katrina.csv");
-}
+client
+  .on("message", function (address, args) {
+    if (address === "/clear") {
+      //draw background
+      image(mapimg, 0, 0);
+    }
+  });
 
 //for map projection
 function mercX(lon) {
@@ -95,6 +93,12 @@ function mercY(lat) {
     b = tan(PI / 4 + lat / 2),
     c = PI - log(b);
   return a * c;
+}
+
+function preload() {
+  mapUrl = `https://api.mapbox.com/styles/v1/mapbox/cj5l80zrp29942rmtg0zctjto/static/-89.00000,30.00000,4.0,0,0/${ww}x${hh}?access_token=pk.eyJ1IjoidGFjYXJzb24iLCJhIjoiY2pobXN6bzdmMGgzdjM3cng5dmt2bGR5YSJ9.6_PBjDKRzs5dTcJltbTfFA`
+  mapimg = loadImage(mapUrl);
+  katrina = loadStrings("data/katrina.csv");
 }
 
 function setup() {
