@@ -96,7 +96,7 @@ function mercY(lat) {
 }
 
 function preload() {
-  mapUrl = `https://api.mapbox.com/styles/v1/mapbox/cj5l80zrp29942rmtg0zctjto/static/-89.00000,30.00000,4.0,0,0/${ww}x${hh}?access_token=pk.eyJ1IjoidGFjYXJzb24iLCJhIjoiY2pobXN6bzdmMGgzdjM3cng5dmt2bGR5YSJ9.6_PBjDKRzs5dTcJltbTfFA`
+  mapUrl = `https://api.mapbox.com/styles/v1/mapbox/satellite-v9/static/-89.00000,30.00000,4.0,0,0/${ww}x${hh}?access_token=pk.eyJ1IjoidGFjYXJzb24iLCJhIjoiY2pobXN6bzdmMGgzdjM3cng5dmt2bGR5YSJ9.6_PBjDKRzs5dTcJltbTfFA`
   mapimg = loadImage(mapUrl);
   katrina = loadStrings("data/katrina.csv");
 }
