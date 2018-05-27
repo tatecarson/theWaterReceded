@@ -59,7 +59,12 @@ client.on('message', function (address, args) {
 });
 
 function setup() {
-  createCanvas(displayWidth, displayHeight);
+  var cnv = createCanvas(windowWidth, windowHeight);
+  cnv.style('display', 'block');
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function draw() {

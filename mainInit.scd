@@ -13,6 +13,8 @@ s.options.sampleRate_(44100);
 s.waitForBoot{
 	//connect to webserver
 	b = NetAddr.new("209.177.90.179", 9000);
+	// local
+	// b = NetAddr.new("localhost", 9000);
 
 	Require("SynthDefs");
 

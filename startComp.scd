@@ -36,6 +36,7 @@ Tdef(\staggered, {
 		b.sendMsg("/clar", 500, ~latFreq[i], ~amp[i], ~dur[i], ~attack[i], ~release[i], ~clarTrigger[i%7]);
 		b.sendMsg("/audience", ~latFreq[i], ~amp[i], ~dur[i], ~attack[i], ~release[i], ~audienceTrigger[i%7]);
 
+
 		//everything
 		b.sendMsg("/sc", 500, ~latFreq[i], ~amp[i], ~dur[i], ~attack[i], ~release[i], 2);
 		b.sendMsg("/sc", 500, ~longFreq[i], ~amp[i], ~dur[i], ~attack[i], ~release[i], 1);

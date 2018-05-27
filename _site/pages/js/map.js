@@ -13,6 +13,7 @@ var ing,
 var ingredients = [];
 
 const client = new rhizome.Client()
+
 // `rhizome.start` is the first function that should be called. The function
 // inside is executed once the client managed to connect.
 client.start(function (err) {
@@ -24,17 +25,9 @@ client.start(function (err) {
   client.send('/sys/subscribe', ['/'])
 })
 
-client.on('connected', function () {
-  alert('connected!')
-})
-
-client.on('connection lost', function () {
-  alert('connection lost!')
-})
-
-client.on('server full', function () {
-  alert('server is full!')
-})
+client.on("connected", function () {
+  console.log("connected");
+});
 
 client.on("message", function (address, args) {
   if (address === "/map") {
@@ -101,11 +94,17 @@ function preload() {
   katrina = loadStrings("data/katrina.csv");
 }
 
+// function setup() {   createCanvas(ww, hh);   image(mapimg, 0, 0); }
+
 function setup() {
-  createCanvas(ww, hh);
+  var cnv = createCanvas(windowWidth, windowHeight);
+  cnv.style('display', 'block');
   image(mapimg, 0, 0);
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
 //send i from SC
 function draw() {
   translate(width / 2, height / 2);
