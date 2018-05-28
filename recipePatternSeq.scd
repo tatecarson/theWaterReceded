@@ -15,10 +15,10 @@
 	).debug("diffuse set");
 
 	//GUI notification
-	{~recipeGui.string = "7. Oyster Patties"}.defer;
+	{~recipeGui.string = "4. Oyster Patties"}.defer;
 
 	//Cell phone notification
-	b.sendMsg("/recipeName", "7. Oyster Patties", 2 + "repititions");
+	b.sendMsg("/recipeName", "4. Oyster Patties", 3 + "repititions");
 
 
 	maestro.par(~oysterSnap);
@@ -104,8 +104,8 @@
 		\rotRate, 2
 	).debug("diffuse set");
 
-	{~recipeGui.string = "6. Banana Nut Bread"}.defer;
-	b.sendMsg("/recipeName", "6. Banana Nut Bread", 3 + "repititions");
+	{~recipeGui.string = "3. Banana Nut Bread"}.defer;
+	b.sendMsg("/recipeName", "3. Banana Nut Bread", 4 + "repititions");
 
 	maestro.par(~bananaSnap);
 
@@ -185,8 +185,8 @@
 		\rotRate, 3
 	).debug("diffuse set");
 
-	{~recipeGui.string = "5. Bread Pudding"}.defer;
-	b.sendMsg("/recipeName", "5. Bread Pudding", 4 + "repititions");
+	{~recipeGui.string = "2. Bread Pudding"}.defer;
+	b.sendMsg("/recipeName", "2. Bread Pudding", 5 + "repititions");
 
 	maestro.par(~creoleSnap);
 
@@ -265,8 +265,8 @@
 	).debug("diffuse set");
 
 	//for gui
-	{~recipeGui.string = "4. Frozen Lemon Pie"}.defer;
-	b.sendMsg("/recipeName", "4. Frozen Lemon Pie", 5 + "repititions");
+	// {~recipeGui.string = "4. Frozen Lemon Pie"}.defer;
+	// b.sendMsg("/recipeName", "4. Frozen Lemon Pie", 5 + "repititions");
 
 	maestro.par(~frozenLemonPieSnap);
 
@@ -358,8 +358,8 @@
 		\rotRate, 5
 	).debug("diffuse set");
 
-	{~recipeGui.string = "3. Lemon Thins"}.defer;
-	b.sendMsg("/recipeName", "3. Lemon Thins", 6 + "repititions");
+	// {~recipeGui.string = "3. Lemon Thins"}.defer;
+	// b.sendMsg("/recipeName", "3. Lemon Thins", 6 + "repititions");
 
 	maestro.par(~lemonThinsSnap);
 
@@ -448,8 +448,8 @@
 		\rotRate, 6
 	).debug("diffuse set");
 
-	{~recipeGui.string = "2. Oatmeal Cookies"}.defer;
-	b.sendMsg("/recipeName", "2. Oatmeal Cookies", 7 + "repititions");
+/*	{~recipeGui.string = "2. Oatmeal Cookies"}.defer;
+	b.sendMsg("/recipeName", "2. Oatmeal Cookies", 7 + "repititions");*/
 
 	maestro.par(~oatmealCookiesSnap);
 
@@ -532,7 +532,7 @@
 	).debug("diffuse set");
 
 	{~recipeGui.string = "1. Pecan Pralines"}.defer;
-	b.sendMsg("/recipeName", "1. Pecan Pralines", 8 + "repititions");
+	b.sendMsg("/recipeName", "1. Pecan Pralines", 6 + "repititions");
 
 	maestro.par(~pecanPralinesSnap);
 

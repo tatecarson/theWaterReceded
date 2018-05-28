@@ -1,3 +1,23 @@
+/*
+Tech setup:
+- Each player should pick a part 1-3
+- go to player1.andthewaterreceded.org , player2, player3
+- swipe up on your screen to make fullscreen
+- look for green dot to make sure there is a connection
+
+Performance instructions:
+- play when the shape turns green for the duration of the shape
+- interpret the shapes as attack/release diagrams for loudness
+- for pitch take the map the x axis of the phone to the comfortable range of pitch of your instrument
+  -the lower the shape on the screen the lower the pitch
+  - does not need to be exact, just shows a change over time
+  - can tune with electronics
+
+second movement:
+- interpret dot size as loudness
+*/
+
+~end.next
 //run this to initialize
 //start composition from GUI
 (

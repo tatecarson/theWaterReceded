@@ -54,7 +54,7 @@ client.on('message', function (address, args) {
 client.on('message', function (address, args) {
   if (address === '/recipeName') {
     recipeName = args[0];
-    repititions = args[1];
+    repetitions = args[1];
   };
 });
 
@@ -91,8 +91,8 @@ function draw() {
   //recipe name
   textSize(18);
   if (recipeName) { //to handle null
-    text(recipeName, 125, 25);
-    text(repititions, 125, 50);
+    text(recipeName, 200, 25);
+    text(repetitions, 200, 50);
   }
 
   //post green dot
@@ -100,5 +100,5 @@ function draw() {
     fill(0, 255, 0);
     ellipse(25, 50, 25, 25);
 
-  } else {}
+  }
 }
