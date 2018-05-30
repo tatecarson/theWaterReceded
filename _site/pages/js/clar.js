@@ -71,6 +71,9 @@ function windowResized() {
 function draw() {
   background(51);
   strokeWeight(2);
+
+  //boundary
+  stroke(255)
   line(100, 20, 100, 700);
 
   for (var i = 0; i < movers.length; i++) {
@@ -92,7 +95,6 @@ function draw() {
   //recipe name
   textSize(18);
   if (recipeName) { //to handle null
-    background(51);
     text(recipeName, 125, 25);
     text(repetitions, 125, 50);
   }

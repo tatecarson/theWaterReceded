@@ -69,6 +69,9 @@ function windowResized() {
 function draw() {
   background(51);
   strokeWeight(2);
+
+  //boundary
+  stroke(255)
   line(100, 20, 100, 700);
 
   for (var i = 0; i < movers.length; i++) {

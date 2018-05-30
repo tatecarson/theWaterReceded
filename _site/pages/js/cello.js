@@ -13,6 +13,11 @@ var working = false;
 var recipeName;
 var repititions;
 
+//colors
+var bg = '#50514F'
+var play
+var off = '#70c1b3'
+
 client.on('message', function (address, args) {
   if (address === '/cello') {
     console.log(args);
@@ -68,8 +73,11 @@ function windowResized() {
 }
 
 function draw() {
-  background(51);
+  background(bg);
   strokeWeight(2);
+
+  //boundary
+  stroke(255)
   line(100, 20, 100, 700);
 
   for (var i = 0; i < movers.length; i++) {

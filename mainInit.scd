@@ -17,7 +17,6 @@ second movement:
 - interpret dot size as loudness
 */
 
-~end.next
 //run this to initialize
 //start composition from GUI
 (
